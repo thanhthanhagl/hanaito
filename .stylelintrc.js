@@ -12,6 +12,7 @@ module.exports = {
     "selector-max-compound-selectors": 3,
     "selector-max-id": 2,
     "string-quotes": "double",
+    "value-no-vendor-prefix": null,
   },
   ignoreFiles: ["node_modules/**/*", "dist/**/*", "src/_public/**/*"],
 };
