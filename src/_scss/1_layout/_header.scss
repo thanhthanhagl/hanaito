@@ -88,6 +88,11 @@
             background-repeat: no-repeat;
             z-index: -1;
         }
+        a{            
+        &:hover{
+            opacity: 1;
+        }
+        }
     }
 
     &__about {
@@ -184,6 +189,7 @@
         font-size: 1.2rem;
         line-height: 1.7;
         letter-spacing: 0;
+
     }
 
     &__submenu {
