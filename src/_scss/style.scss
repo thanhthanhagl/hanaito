@@ -10,8 +10,21 @@
 .sp-only {
     display: none;
 }
-@include sp {
+
+.not-pccontent {
+    display: none;
+}
+@include tab {    
     .pc-only {
+        display: none;
+    }
+
+    .not-pccontent {
+        display: contents;
+    }
+}
+@include sp {
+    .not-sp {
         display: none;
     }
 
@@ -32,25 +45,32 @@
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
+@import "2_component/00_mainvisual";
 @import "2_component/01_btn";
 @import "2_component/02_title";
 @import "2_component/03_icon";
-@import "2_component/04_form";
 @import "2_component/05_text";
 @import "2_component/06_navi";
 @import "2_component/07_img";
 @import "2_component/08_list";
-@import "2_component/09_table";
 @import "2_component/10_line";
-@import "2_component/11_video";
-@import "2_component/12_slide";
+@import "2_component/11_info";
+@import "2_component/12_gallery";
+@import "2_component/13_pagetitle";
+@import "2_component/14_about";
+@import "2_component/15_point";
+@import "2_component/16_staff";
+@import "2_component/17_blog";
+@import "2_component/18_map";
+@import "2_component/19_news";
+@import "2_component/20_contact";
+@import "2_component/21_company";
 @import "2_component/99_other";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "3_project/top";
-@import "3_project/about";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Utility .u-

@@ -1,23 +1,65 @@
 <header class="c-header">
-  <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
-  <nav class="c-gnav">
-    <ul>
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul>
-                <% link.links.forEach(child_link => { %>
-                  <li>
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
+  <div class="c-mainvisual">
+    <div class="c-mainvisual__list">
+      <div class="c-mainvisual__img c-mainvisual__first"></div>
+      <div class="c-mainvisual__img c-mainvisual__second"></div>
+      <div class="c-mainvisual__img c-mainvisual__third"></div>
+      <div class="c-mainvisual__img c-mainvisual__four"></div>
+    </div>
+    <div class="c-mainvisual__book c-mainvisual__text">ご予約は<br>こちらから</div>
+    <div class="c-mainvisual__address c-mainvisual__text">名古屋駅<br>徒歩6分</div>
+    <div class="c-mainvisual__inner">
+      <h1 class="c-pagetitle">
+        <span class="c-pagetitle__text">明るく・賢く・たくましく！</span>
+        <span class="c-pagetitle__text">お子さまの好奇心を尊重し、</span>
+        <span class="c-pagetitle__text">想像力を鍛える。</span>
+      </h1>
+    </div>
+  </div>
+  <div class="l-container l-container__w980">
+    <div class="c-header__contact">
+      <span class="c-header__phone pc-only">052-485-5008</span>
+      <span class="c-header__email pc-only">お問い合わせフォーム</span>
+    </div>
+    <nav class="c-nav">
+      <ul class="c-nav__menu c-nav__left pc-only">
+        <li class="c-nav__item c-nav__about"><a href="#"><span class="c-nav__title">はないとについて</span><span
+              class="c-nav__subtitle">ABOUT</span></a>
+          <ul class="c-nav__submenu c-nav__subabout">
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/about_icon1.jpg" alt="はないとの概要"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">はないとの概要</span></a></li>
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/about_icon2.jpg" alt="はないとの特色"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">はないとの特色</span></a></li>
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/about_icon3.jpg" alt="保育について"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">保育について</span></a></li>
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/about_icon4.jpg" alt="施設・設備紹介"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">施設・設備紹介</span></a></li>
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/about_icon5.jpg" alt="給食について"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">給食について</span></a></li>
+          </ul>
+        </li>
+        <li class="c-nav__item c-nav__price"><a href="#"><span class="c-nav__title">料金</span><span
+              class="c-nav__subtitle">PRICE</span></a></li>
+        <li class="c-nav__item c-nav__schedule"><a href="#"><span class="c-nav__title">1日の流れ</span><span
+              class="c-nav__subtitle">SCHEDULE </span></a></li>
+      </ul>
+      <a class="c-nav__logo" href="<%= BASE_URL %>index.html"><img src="./assets/img/logo.png"
+          alt="Kindergaten Hanaito"></a>
+      <ul class="c-nav__menu c-nav__right pc-only">
+        <li class="c-nav__item c-nav__staff"><a href="#"><span class="c-nav__title">スタッフ紹介</span><span
+              class="c-nav__subtitle">STAFF</span></a>
+          <ul class="c-nav__submenu c-nav__substaff">
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/staff_icon1.jpg" alt="はないとの概要"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">はないとの概要</span></a></li>
+            <li class="c-nav__subitem"><a href="#"><img src="./assets/img/staff_icon2.jpg" alt="スタッフ一覧"
+                  class="c-nav__submenuicon"><span class="c-nav__submenutext">スタッフ一覧</span></a></li>
+          </ul>
+        </li>
+        <li class="c-nav__item c-nav__blog"><a href="#"><span class="c-nav__title">ブログ</span><span
+              class="c-nav__subtitle">BLOG</span></a></li>
+        <li class="c-nav__item c-nav__qna"><a href="#"><span class="c-nav__title">よくある質問</span><span
+              class="c-nav__subtitle">Q&A</span></a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

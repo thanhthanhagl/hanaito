@@ -1,0 +1,15 @@
+.c-info {
+    &__main {
+        display: flex;
+        @include tab {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        width: 50%;
+        @include tab {
+            width: 100%;
+        }
+    }
+}

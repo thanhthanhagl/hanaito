@@ -1,0 +1,32 @@
+<!-- start section staff-->
+<section class="c-staff">
+    <div class="l-container l-container__w980">
+        <div class="c-staff__top">
+            <h2 class="c-title">スタッフ紹介<span class="c-subtitle">STAFF</span></h2>
+        </div>
+        <div class="c-staff__main">
+            <div class="c-staff__list">
+                <% if (typeof staff != 'undefined') { %>
+                    <% staff.forEach(item => { %>
+                      <div class="c-staff__item">
+                        <div class="c-staff__itemtop">
+                            <img src="<%= item.avatar %>" alt="<%= item.name %>" class="c-staff__avatar">
+                            <div class="c-staff__info">
+                                <p class="c-staff__infotext"><%= item.position %></p>
+                                <p class="c-staff__infotext"><%= item.name %></p>
+                            </div>
+                        </div>
+                        <div class="c-staff__mess"><%= item.intro %></div>
+                        <div class="c-staff__more">
+                            <p class="c-staff__moreinfo"><span class="c-staff__role"><%= item.role %></span></p>
+                            <p class="c-staff__moreinfo"><span class="c-staff__level"><%= item.level %></span></p>
+                        </div>
+                      </div>
+                    <% }) %>
+                  <% } %>
+            </div>
+        </div>
+        <a href="#" class="c-btn c-staff__green">スタッフページへ</a>
+    </div>
+</section>
+<!-- end section staff-->

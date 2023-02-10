@@ -1,44 +1,32 @@
-<%- include('_layouts/layout', { title: 'Home page' }); -%>
+<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | Home page' }); -%>
 
 <!-- @meta -->
-<meta name="description" content="Home page">
+<meta name="description" content="Kindergaten Hanaito | Home page">
 <!-- @@meta -->
 
 <!-- @content -->
 <main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
-
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
+  <%- include('_partials/about'); -%>
+  <%- include('_partials/point'); -%>
+  <%- include('_partials/staff'); -%>
+  <%- include('_partials/company'); -%>
+  <%- include('_partials/blog'); -%>
+  <div class="c-map">
+    <iframe class="c-map__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.276152580639!2d136.88360891260527!3d35.174669105293475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376c2ee5dc7cf%3A0xf93f20e1156f3d31!2z44CSNDUwLTAwMDIg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5p2R5Yy65ZCN6aeF77yS5LiB55uu77yU77yR4oiS77yTIOOCteODs-OCqOOCueOCseODvOODk-ODq-OCt-ODhuOCo-OCs-ODvOODneWQjemnhQ!5e0!3m2!1sja!2sjp!4v1458708626728"></iframe>
+  </div>
+  <%- include('_partials/info'); -%>
+  <%- include('_partials/news'); -%>
+  <%- include('_partials/gallery'); -%>
+  <%- include('_partials/contact'); -%>
+  <div class="c-flink">
+    <ul class="c-flink__list">
+      <li class="c-flink__item"><a href="#">はないとについて</a></li>
+      <li class="c-flink__item"><a href="#">料金</a></li>
+      <li class="c-flink__item"><a href="#">1日の流れ</a></li>    
+      <li class="c-flink__item"><a href="#">スタッフ紹介</a></li>    
+      <li class="c-flink__item"><a href="#">ブログ</a></li>    
+      <li class="c-flink__item"><a href="#">よくある質問</a></li>    
+    </ul>
+  </div>
 </main>
 <!-- @@content -->
-
-<!-- @script -->
-<script>
-  console.log("home page");
-</script>
-<!-- @@script -->

@@ -1,0 +1,102 @@
+.c-mainvisual {
+    position: relative;
+    z-index: -1;
+
+    &::after {
+        content: "";
+        background-image: url("./assets/img/flagleft.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        width: 218px;
+        height: 96px;
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        @include tab {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        background-image: url("./assets/img/flag.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        width: 214px;
+        height: 96px;
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+
+        @include tab {
+            display: none;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__book {
+        background-image: url("./assets/img/redflower.png");
+        width: 119px;
+        height: 119px;
+        right: 8.4%;
+        top: 14%;
+        padding-top: 5px;
+        padding-left: 8px;
+        font-feature-settings: "palt" 1;
+    }
+
+    &__address {
+        background-image: url("./assets/img/blueflower.png");
+        width: 107px;
+        height: 106px;
+        right: 1.3%;
+        top: 26.7%;
+        padding-top: 9px;
+    }
+
+    &__img {
+        background-size: cover;
+        height: 500px;
+    }
+
+    &__first {
+        background-image: url("../assets/img/slide1.jpg");
+    }
+
+    &__second {
+        background-image: url("../assets/img/slide2.jpg");
+    }
+
+    &__third {
+        background-image: url("../assets/img/slide3.jpg");
+    }
+
+    &__four {
+        background-image: url("../assets/img/slide4.jpg");
+    }
+
+    &__inner {
+        position: absolute;
+        top: 81.5%;
+        left: 28.6%;
+        transform: translate(-50%, -50%);
+    }
+}

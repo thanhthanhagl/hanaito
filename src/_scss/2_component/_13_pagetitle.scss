@@ -1,0 +1,28 @@
+.c-pagetitle {
+    font-weight: 500;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: 1.8;
+    font-feature-settings: "palt" 1;
+
+    &__text {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 5px;
+        padding-left: 12px;
+        letter-spacing: -1.5px;
+        padding-right: 16px;
+        height: 40px;
+        width: fit-content;
+
+        &:first-child {
+            letter-spacing: 3px;
+            padding-right: 5px;
+            line-height: 1.9;
+        }
+
+        &:last-child {
+            padding-right: 10px;
+        }
+    }
+}

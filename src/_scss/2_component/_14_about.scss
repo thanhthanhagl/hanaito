@@ -1,0 +1,72 @@
+.c-about {
+    display: flex;
+    padding-top: 65px;
+    justify-content: space-between;
+
+    &__main {
+        width: 100%;
+        padding-right: 2.4%;
+        text-align: center;
+        color: #000;
+        position: relative;
+        padding-top: 29px;
+        font-feature-settings: "palt" 1;
+    }
+
+    &__wrapimg {
+        position: relative;
+    }
+
+    &__decorleft {
+        padding-top: 0.2%;
+        display: block;
+        left: 0.3%;
+        width: 25%;
+        width: 48%;
+    }
+
+    &__decorright {
+        display: block;
+        width: 43.5%;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1.75;
+        letter-spacing: 4.5px;
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.9;
+        letter-spacing: 0;
+    }
+
+    &__btn {
+        margin: -3px auto 0;
+        padding: 9px 6px 4px 2px;
+        transform: translateX(-2px);
+        max-width: 265px;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2;
+        letter-spacing: 0;
+        border: $red 1px solid;
+        color: $red;
+        display: block;
+        text-align: center;
+
+        &:hover {
+            color: #fff;
+            background-color: $red;
+        }
+    }
+
+    &__btntext {
+        padding-left: 8px;
+    }
+}

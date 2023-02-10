@@ -1,0 +1,14 @@
+.c-company {
+    &__list {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__wrapimg {
+        width: 225px;
+        height: 87px;
+        margin-bottom: 20px;
+    }
+}

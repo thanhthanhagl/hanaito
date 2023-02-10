@@ -4,11 +4,18 @@ btn
 
 /*
 ------------------------------------------------------------*/
-.c-btn1 {
-    display: inline-block;
-    padding: 10px 50px;
-    font-size: 1.6rem;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    line-height: 1;
+
+.c-btn {
+    padding: 10px 47px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    border: $green 1px solid;
+    color: $green;
+    border-radius: 3px;
+    margin: 0 auto;
+    max-width: 218px;
+    display: block;
+    text-align: center;
 }

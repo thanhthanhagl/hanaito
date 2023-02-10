@@ -1,0 +1,54 @@
+.c-gallery {
+    &__row {
+        display: flex;
+        height: 200px;
+    }
+
+    &__item {
+        width: calc(100% / 8);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include tab {
+            width: calc(100% / 5);
+        }
+    }
+
+    &__one {
+        background-image: url("./assets/img/slider1.jpg");
+    }
+
+    &__two {
+        background-image: url("./assets/img/slider2.jpg");
+        @include tab {
+            width: calc((100% / 5) / 2);
+        }
+    }
+
+    &__three {
+        background-image: url("./assets/img/slider3.jpg");
+    }
+
+    &__four {
+        background-image: url("./assets/img/slider4.jpg");
+    }
+
+    &__fine {
+        background-image: url("./assets/img/slider5.jpg");
+    }
+
+    &__six {
+        background-image: url("./assets/img/slider1.jpg");
+    }
+
+    &__seven {
+        background-image: url("./assets/img/slider2.jpg");
+        @include tab {
+            width: calc((100% / 5) / 2);
+        }
+    }
+
+    &__eight {
+        background-image: url("./assets/img/slider3.jpg");
+    }
+}

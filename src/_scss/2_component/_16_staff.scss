@@ -1,0 +1,51 @@
+.c-staff {
+    &__top {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    &__main {
+        margin-top: 50px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    &__item {
+        align-self: normal;
+        max-width: 264px;
+    }
+
+    &__itemtop {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 7px;
+        left: 30px;
+    }
+
+    &__infotext {
+        font-weight: 700;
+        font-size: 1.3rem;
+        letter-spacing: 1.3px;
+        line-height: 2;
+        background-color: #fff;
+        color: #000;
+        margin-bottom: 8px;
+        width: fit-content;
+        padding: 0 17px 0 5px;
+        border-radius: 3px;
+    }
+}

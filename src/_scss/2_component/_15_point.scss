@@ -1,0 +1,74 @@
+.c-point {
+    display: flex;
+    margin: -1% auto 0;
+
+    &__top {
+        background-color: rgb(65, 201, 227);
+        width: 15%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 47px 45px 36px 0;
+    }
+
+    &__title {
+        writing-mode: vertical-rl;
+        font-weight: 700;
+        line-height: 1;
+        font-size: 2.5rem;
+        color: #fff;
+        letter-spacing: -3.5px;
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: #a0e5f5;
+        line-height: 1.7;
+        padding-top: 3px;
+        margin-left: 12px;
+    }
+
+    &__main {
+        display: flex;
+        width: 85%;
+    }
+
+    &__featureimg {
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-self: normal;
+        max-width: 25%;
+        width: 100%;
+    }
+
+    &__info {
+        max-width: 340px;
+    }
+
+    &__btn {
+        margin-top: 110px;
+        padding-right: 20px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        font-feature-settings: "palt" 1;
+        color: #fff;
+        line-height: 1.7;
+
+        &::after {
+            content: "";
+            background-image: url("../assets/img/arrow.svg");
+            display: block;
+            width: 76px;
+            height: 8px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<!-- start section blog-->
+<section class="c-blog">
+    <div class="l-container l-container__w980">
+        <div class="c-blog__top">
+            <h2 class="c-title">ブログ<span class="c-subtitle">BLOG</span></h2>
+        </div>
+        <div class="c-blog__list">
+            <% if (typeof blog !='undefined' ) { %>
+                <% blog.forEach(item=> { %>
+                    <div class="c-blog__item">
+                        <div class="c-blog__featureimg"><img src="<%= item.featureimg %>" alt="<%= item.title %>"></div>
+                        <div class="c-blog__info">
+                            <p class="c-blog__date"><span class="c-blog__label">ブログ</span>
+                                <%= item.date %>
+                            </p>
+                            <h3 class="c-blog__postname">
+                                <%= item.title %>
+                            </h3>
+                            <p class="c-blog__desc not-sp">
+                                <%= item.desc %>
+                            </p>
+                        </div>
+                    </div>
+                    <% }) %>
+                        <% } %>
+        </div>
+        <a href="#" class="c-btn">ブログ一覧へ</a>
+    </div>
+</section>
+<!-- end section blog-->
