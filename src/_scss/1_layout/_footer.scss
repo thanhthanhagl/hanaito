@@ -2,8 +2,51 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
-    text-align: center;
+    &__top {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        padding: 44px 0 32px;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        font-feature-settings: "palt" 1;
+    }
+
+    &__logo {
+        display: block;
+        width: 200px;
+    }
+
+    &__info {
+        padding-left: 38px;
+        text-align-last: left;
+    }
+
+    &__main {
+        font-size: 1.2rem;
+        line-height: 3;
+        letter-spacing: 1.2px;
+        font-feature-settings: "palt" 1;
+        color: #a0a0a0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    &__nav {
+        flex: 0 0 auto;
+        padding-top: 10px;
+        display: flex;
+    }
+
+    &__link {
+        margin-right: 25px;
+    }
+
+    &__copyright {
+        flex: 0 0 auto;
+        padding-top: 8px;
+        margin-right: -2px;
+    }
 }

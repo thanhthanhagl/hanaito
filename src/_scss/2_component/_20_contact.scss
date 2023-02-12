@@ -1,0 +1,42 @@
+.c-contact {
+    background-color: #65bdcc;
+    color: #fff;
+    padding: 33px 0 27px;
+    font-feature-settings: "palt" 1;
+    color: #fff;
+
+    &__main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__col {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        letter-spacing: 1.6px;
+        font-weight: 400;
+    }
+
+    &__tel {
+        font-size: 4.3rem;
+        line-height: 1.1;
+        letter-spacing: 4.3px;
+        font-weight: 700;
+        padding-left: 4px;
+    }
+
+    &__reserve {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        letter-spacing: 1.6px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+}

@@ -1,15 +1,96 @@
 .c-info {
+    background: linear-gradient(to right, #68a3b3 50%, #46c4dc 50%);
+
     &__main {
         display: flex;
-        @include tab {
-            flex-direction: column;
-        }
+        flex-wrap: wrap;
     }
 
     &__col {
-        width: 50%;
+        flex-basis: 50%;
+        color: #fff;
+        letter-spacing: 0.1em;
+        font-feature-settings: "palt" 1;
+
         @include tab {
             width: 100%;
         }
+    }
+
+    &__left {
+        background-color: #68a3b3;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        font-weight: 500;
+        padding-right: 30px;
+        padding-top: 23px;
+        padding-bottom: 18px;
+    }
+
+    &__address {
+        margin-bottom: 25px;
+    }
+
+    &__tel {
+        font-size: 2.6rem;
+        line-height: 1;
+        font-weight: 700;
+        margin-left: -2px;
+        margin-top: 20px;
+        margin-bottom: 4px;
+        letter-spacing: 0.1em;
+    }
+
+    &__fax {
+        font-size: 1.5rem;
+        line-height: 1.67;
+        letter-spacing: 0.08em;
+    }
+
+    &__right {
+        background-color: #46c4dc;
+        padding-left: 47px;
+        padding-top: 25px;
+        padding-bottom: 18px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.19;
+        letter-spacing: 0.1em;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            border-right: 5px solid #fff;
+            height: 25px;
+        }
+    }
+
+    &__heading {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+    }
+
+    &__stationtext {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        margin-bottom: 23px;
+    }
+
+    &__trollertext {
+        font-size: 1.5rem;
+        line-height: 1.67;
+        letter-spacing: 0.1em;
+        margin-top: -1px;
     }
 }

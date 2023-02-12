@@ -1,0 +1,48 @@
+/*------------------------------------------------------------
+line
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-flink {
+    background-color: #ebf3f6;
+    height: 55px;
+
+    &__list {
+        display: flex;
+        width: 100%;
+        padding: 13px 1px;
+        text-align: center;
+        font-feature-settings: "palt";
+        font-size: 1.4rem;
+        line-height: 2.5;
+        letter-spacing: 1.4px;
+    }
+
+    &__item {
+        flex: 1;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: -1px;
+            top: 48%;
+            transform: translateY(-50%);
+            height: 18px;
+            border-left: 2px solid #fff;
+        }
+
+        &:last-child {
+            &::after {
+                position: absolute;
+                content: "";
+                right: -1px;
+                top: 48%;
+                transform: translateY(-50%);
+                height: 18px;
+                border-left: 2px solid #fff;
+            }
+        }
+    }
+}

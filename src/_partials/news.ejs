@@ -2,31 +2,31 @@
 <section class="c-news">
     <div class="l-container l-container__w980">
         <div class="c-news__main">
-            <div class="c-news__main">
+            <div class="c-news__col c-news__left">
                 <div class="c-news__top">
                     <div class="c-news__heading">
-                        <h2 class="c-title">お知らせ</h2>
-                        <p class="c-subtitle">NEW</p>
+                        <h2 class="c-title c-news__title">お知らせ</h2>
+                        <p class="c-subtitle c-news__subtitle">NEW</p>
                     </div>
                     <a href="" class="c-news__more">お知らせ一覧へ</a>
                 </div>
-                <div class="c-news__fb"><img src="./assets/img/fb.jpg" alt="facebook"></div>
-            </div>
-            <div class="c-news__list">
-                <% if (typeof news !='undefined' ) { %>
-                    <% news.forEach(item=> { %>
-                        <a href="<%= item.link%>">
-                            <div class="c-news__item">
-                                <div class="c-news__date">
-                                    <%= item.date%>
+                <div class="c-news__list">
+                    <% if (typeof news !='undefined' ) { %>
+                        <% news.forEach(item=> { %>
+                            <a href="<%= item.link%>">
+                                <div class="c-news__item">
+                                    <div class="c-news__date">
+                                        <%= item.date%>
+                                    </div>
+                                    <div class="c-news__post">
+                                        <%= item.title%>
+                                    </div>
                                 </div>
-                                <div class="c-news__post">
-                                    <%= item.title%>
-                                </div>
-                            </div>
-                        </a>
-                        <% })} %>
+                            </a>
+                            <% })} %>
+                </div>
             </div>
+            <div class="c-news__col c-news__right"><img src="./assets/img/fb.jpg" alt="facebook"></div>
         </div>
     </div>
 </section>

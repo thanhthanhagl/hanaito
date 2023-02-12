@@ -1,39 +1,56 @@
 .c-staff {
+    background-color: #f8fff9;
+    padding-top: 70px;
+    padding-bottom: 77px;
+
     &__top {
-        margin-top: 100px;
         text-align: center;
     }
 
     &__main {
-        margin-top: 50px;
+        margin-top: 43px;
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
-        padding: 0 30px;
+        padding: 0 28px;
+    }
+
+    &__wrapitem {
+        max-width: 265px;
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
         align-self: normal;
-        max-width: 264px;
+        height: 100%;
     }
 
     &__itemtop {
         position: relative;
-        width: 260px;
-        height: 260px;
+        width: 100%;
         border-radius: 50%;
+    }
+
+    &__wrapimg {
+        height: 260px;
+        position: relative;
     }
 
     &__avatar {
         border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
     }
 
     &__info {
         position: absolute;
         bottom: 7px;
-        left: 30px;
+        left: 26px;
     }
 
     &__infotext {
@@ -43,9 +60,61 @@
         line-height: 2;
         background-color: #fff;
         color: #000;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+        height: 24px;
         width: fit-content;
-        padding: 0 17px 0 5px;
+        padding: 0 7px 0 10px;
         border-radius: 3px;
+        font-feature-settings: "palt" 1;
+    }
+
+    &__mess {
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        line-break: anywhere;
+        font-feature-settings: "palt" 1;
+        line-height: 1.67;
+        color: #000;
+        padding: 16px 1px 13px;
+    }
+
+    &__more {
+        margin-top: auto;
+    }
+
+    &__moreinfo {
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        font-size: 1.4rem;
+        line-height: 1.8;
+        color: #000;
+        font-feature-settings: "palt" 1;
+        padding: 0 1px;
+    }
+
+    &__label {
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        line-height: 1.67;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 0 6px;
+        border-radius: 3px;
+        margin-bottom: 3px;
+    }
+
+    &__role {
+        background-color: #b6dc5c;
+    }
+
+    &__level {
+        background-color: #9da9cb;
+    }
+
+    &__btnmore {
+        margin: 77px auto 0;
     }
 }

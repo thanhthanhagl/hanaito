@@ -88,10 +88,11 @@
             background-repeat: no-repeat;
             z-index: -1;
         }
-        a{            
-        &:hover{
-            opacity: 1;
-        }
+
+        a {            
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 

@@ -1,5 +1,40 @@
 .c-map {
-    height: 400px;
+    position: relative;
+
+    &__btn {
+        position: absolute;
+        top: 2.8%;
+        left: 7%;
+        transform: translate(-50%, -50%);
+        background-image: url("./assets/img/map.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 125px;
+        height: 125px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-feature-settings: "palt" 1;
+        color: #fff;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        letter-spacing: 1.5px;
+        width: 60%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 53.9%;
+        left: 59%;
+    }
+
+    &__number {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    &__wrapmap {
+        height: 400px;
+    }
 
     &__map {
         width: 100%;

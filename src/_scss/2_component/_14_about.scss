@@ -2,32 +2,34 @@
     display: flex;
     padding-top: 65px;
     justify-content: space-between;
+    position: relative;
 
     &__main {
         width: 100%;
-        padding-right: 2.4%;
         text-align: center;
         color: #000;
         position: relative;
-        padding-top: 29px;
+        padding-top: 30px;
+        margin: 0 auto;
         font-feature-settings: "palt" 1;
+        padding-bottom: 102px;
     }
 
     &__wrapimg {
-        position: relative;
+        position: absolute;
     }
 
     &__decorleft {
-        padding-top: 0.2%;
+        top: 12%;
         display: block;
         left: 0.3%;
-        width: 25%;
         width: 48%;
     }
 
     &__decorright {
         display: block;
-        width: 43.5%;
+        width: 22.5%;
+        right: 0;
     }
 
     &__title {
@@ -35,7 +37,7 @@
         font-weight: 700;
         line-height: 1.75;
         letter-spacing: 4.5px;
-        margin-bottom: 22px;
+        margin-bottom: 21px;
     }
 
     &__text {
@@ -44,6 +46,7 @@
         font-size: 1.6rem;
         line-height: 1.9;
         letter-spacing: 0;
+        padding-right: 3px;
     }
 
     &__btn {
