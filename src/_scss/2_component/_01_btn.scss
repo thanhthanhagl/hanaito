@@ -25,6 +25,12 @@ btn
         color: #fff;
         opacity: 1;
     }
+    @include sp {
+        max-width: 220px;
+        padding: 8px 0 5px;
+        font-weight: 700;
+        letter-spacing: 0;
+    }
 }
 
 .c-btnred {
@@ -41,8 +47,9 @@ btn
     display: block;
     text-align: center;
     background-color: $red;
-
-    &:hover {
-        opacity: 1;
+    @include sp {
+        padding: 11px 0 9px;
+        max-width: 225px;
+        letter-spacing: 0;
     }
 }

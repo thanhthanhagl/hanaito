@@ -8,17 +8,22 @@
             <% if (typeof blog !='undefined' ) { %>
                 <% blog.forEach(item=> { %>
                     <div class="c-blog__item">
-                        <div class="c-blog__featureimg"><img src="<%= item.featureimg %>" alt="<%= item.title %>"></div>
+                        <div class="c-blog__featureimg">
+                            <a href="#"><img src="<%= item.featureimg %>" alt="<%= item.title %>">
+                            </a>
+                        </div>
                         <div class="c-blog__info">
                             <p class="c-blog__date"><span class="c-blog__label">ブログ</span>
                                 <%= item.date %>
                             </p>
-                            <h3 class="c-blog__postname">
-                                <%= item.title %>
-                            </h3>
-                            <p class="c-blog__desc not-sp">
-                                <%= item.desc %>
-                            </p>
+                            <a href="#">
+                                <h3 class="c-blog__postname">
+                                    <%= item.title %>
+                                </h3>
+                                <p class="c-blog__desc not-sp">
+                                    <%= item.desc %>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <% }) %>

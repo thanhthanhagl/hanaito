@@ -9,14 +9,40 @@ footer
         font-size: 1.4rem;
         line-height: 1.8;
         font-feature-settings: "palt" 1;
+
         @include tab {
             padding: 44px 0 32px;
+        }
+
+        @include sp {
+            flex-direction: column;
+            padding: 20px 0 19px;
         }
     }
 
     &__logo {
-        display: block;
         width: 200px;
+
+        @include sp {
+            display: block;
+            width: 181px;
+            margin: 0 auto;
+        }
+    }
+
+    &__social {
+        display: none;
+
+        @include sp {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin: 20px auto 0;
+        }
+    }
+
+    &__socialitem {
+        width: 25px;
     }
 
     &__info {
@@ -35,6 +61,7 @@ footer
         justify-content: space-between;
         padding-top: 10px;
         text-align: center;
+
         @include sp {
             font-size: 1rem;
             font-weight: 400;
@@ -46,6 +73,7 @@ footer
         flex: 0 0 auto;
         padding-top: 9px;
         display: flex;
+
         @include sp {
             display: none;
         }
@@ -59,8 +87,11 @@ footer
         flex: 0 0 auto;
         padding-top: 8px;
         margin-right: -2px;
+
         @include sp {
             flex: 1;
+            padding-top: 0;
+            margin-right: 0;
         }
     }
 }

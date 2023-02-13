@@ -1,8 +1,13 @@
 .c-staff {
     background-color: #f8fff9;
     padding: 70px 0;
+
     @include tab {
         padding: 69px 0;
+    }
+
+    @include sp {
+        padding: 47px 0;
     }
 
     &__top {
@@ -11,8 +16,13 @@
 
     &__main {
         margin-top: 43px;
+
         @include tab {
             margin-top: 41px;
+        }
+
+        @include sp {
+            margin-top: 29px;
         }
     }
 
@@ -20,15 +30,22 @@
         display: flex;
         justify-content: space-between;
         padding: 0 28px;
+
         @include tab {
             flex-direction: column;
             max-width: 756px;
             margin: 0 auto;
         }
+
+        @include sp {
+            padding: 0;
+            max-width: 500px;
+        }
     }
 
     &__wrapitem {
         max-width: 265px;
+
         @include tab {
             max-width: 100%;
             margin-bottom: 47px;
@@ -37,16 +54,46 @@
                 .c-staff__mess {
                     letter-spacing: 2px;
                     margin-top: -3px;
+
+                    @include sp {
+                        letter-spacing: 1.1px;
+                        margin-top: 0;
+                    }
                 }
 
                 .c-staff__more {
                     margin-top: 36px;
+
+                    @include sp {
+                        margin-top: 24px;
+                    }
                 }
 
                 .c-staff__moreinfo {
                     letter-spacing: 2px;
+
+                    @include sp {
+                        letter-spacing: 1px;
+                    }
                 }
 
+                .c-staff__infotext {
+                    @include sp {
+                        margin-bottom: 3px;
+                    }
+                }
+
+            }
+        }
+        @include sp {
+            margin-bottom: 32px;
+        }
+
+        &:last-child {
+            @include sp {
+                .c-staff__infotext {
+                    margin-bottom: 4px;
+                }
             }
         }
     }
@@ -56,6 +103,7 @@
         flex-direction: column;
         align-self: normal;
         height: 100%;
+
         @include tab {
             flex-direction: row;
             justify-content: space-between;
@@ -66,9 +114,15 @@
         position: relative;
         width: 100%;
         border-radius: 50%;
+
         @include tab {
             width: 60%;
             max-width: 260px;
+            margin-top: 3px;
+        }
+
+        @include sp {
+            max-width: 75px;
             margin-top: 3px;
         }
     }
@@ -76,15 +130,27 @@
     &__bottom {
         display: flex;
         flex-direction: column;
+
         @include tab {
             width: 61%;
             margin-top: -1px;
+        }
+
+        @include sp {
+            width: 68%;
         }
     }
 
     &__wrapimg {
         height: 260px;
         position: relative;
+
+        @include sp {
+            width: 100%;
+            height: auto;
+            padding-bottom: 100%;
+            overflow: hidd;
+        }
     }
 
     &__avatar {
@@ -93,14 +159,28 @@
         height: 100%;
         position: absolute;
         object-fit: cover;
+
+        @include sp {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__info {
         position: absolute;
         bottom: 7px;
         left: 26px;
+
         @include tab {
             left: 25px;
+        }
+
+        @include sp {
+            left: unset;
+            top: 7px;
+            bottom: unset;
+            position: relative;
         }
     }
 
@@ -117,6 +197,26 @@
         padding: 0 7px 0 10px;
         border-radius: 3px;
         font-feature-settings: "palt" 1;
+
+        @include sp {
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            background-color: transparent;
+            margin-bottom: 19px;
+            height: 12px;
+        }
+    }
+
+    &__position {
+        @include sp {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            letter-spacing: 0.8px;
+            font-weight: 400;
+        }
     }
 
     &__mess {
@@ -128,15 +228,28 @@
         line-height: 1.67;
         color: #000;
         padding: 16px 0 15px 1px;
+
         @include tab {
             padding: 0;
+        }
+
+        @include sp {
+            letter-spacing: 1.1px;
+            margin-top: 0;
+            font-size: 1.2rem;
+            line-height: 1.7;
         }
     }
 
     &__more {
         margin-top: auto;
+
         @include tab {
             margin-top: 33px;
+        }
+
+        @include sp {
+            margin-top: 24px;
         }
     }
 
@@ -148,6 +261,21 @@
         color: #000;
         font-feature-settings: "palt" 1;
         padding: 0 1px;
+
+        @include sp {
+            font-size: 1.2rem;
+            line-height: 1.67;
+            letter-spacing: 0.1em;
+
+            span {
+                display: inline-block;
+
+                &:last-child {
+                    width: 110px;
+                    margin-top: 3px;
+                }
+            }
+        }
     }
 
     &__label {
@@ -161,8 +289,18 @@
         padding: 0 6px;
         border-radius: 3px;
         margin-bottom: 3px;
+
         @include tab {
             margin-right: 8px;
+        }
+
+        @include sp {
+            margin-bottom: 6px;
+            margin-right: 1px;
+            padding: 6px 9px;
+            font-size: 1.2rem;
+            line-height: 1;
+            vertical-align: top;
         }
     }
 
@@ -176,8 +314,12 @@
 
     &__btnmore {
         margin: 76px auto 0;
+
         @include tab {
             margin-top: 4px;
+        }
+        @include sp {
+            margin-top: 14px;
         }
     }
 }

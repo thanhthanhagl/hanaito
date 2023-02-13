@@ -42,6 +42,9 @@
 
     &__wrapmap {
         height: 400px;
+        @include sp {
+            height: 225px;
+        }
     }
 
     &__map {

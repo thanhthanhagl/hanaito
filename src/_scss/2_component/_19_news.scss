@@ -1,12 +1,23 @@
 .c-news {
     padding-top: 4.3%;
     padding-bottom: 3.8%;
+
     @include tab {
         padding-bottom: 6.8%;
+    }
+    @include sp {        
+        padding-bottom: 10.8%;
+    }
+
+    .l-container__w980 {
+        @include sp {
+            padding: 0;
+        }
     }
 
     &__main {
         display: flex;
+
         @include tab {
             max-width: 700px;
             margin: 22px auto 0;
@@ -16,6 +27,7 @@
 
     &__col {
         flex-basis: 50%;
+
         @include tab {
             flex-basis: 100%;
         }
@@ -23,6 +35,20 @@
 
     &__left {
         margin-bottom: 47px;
+
+        @include sp {
+            padding: 0 20px;
+            margin-bottom: 33px;
+        }
+    }
+
+    &__right {
+        @include sp {
+            img {
+                height: 170px;
+                width: 100%;
+            }
+        }
     }
 
     &__top {
@@ -31,20 +57,36 @@
         padding-right: 20px;
         margin-top: 1px;
         margin-bottom: 13px;
+
         @include tab {
             padding-right: 0;
             max-width: 100%;
             margin-bottom: 18px;
+        }
+
+        @include sp {
+            margin-bottom: 13px;
         }
     }
 
     &__title {
         display: inline-block;
         margin-right: 10px;
+
+        @include sp {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
     }
 
     &__subtitle {
         display: inline-block;
+
+        @include sp {
+            padding-right: 0;
+            letter-spacing: 1px;
+        }
     }
 
     &__more {
@@ -55,8 +97,14 @@
         line-height: 1.9;
         letter-spacing: 1.3px;
         font-weight: 700;
+
         @include tab {
             padding-top: 2px;
+        }
+
+        @include sp {
+            letter-spacing: 1px;
+            padding-top: 0;
         }
 
         &::after {
@@ -66,8 +114,13 @@
             color: #64c7e1;
             font-size: 1.3rem;
             margin-left: 8px;
+
             @include tab {
                 margin-left: 7px;
+            }
+
+            @include sp {
+                margin-left: 9px;
             }
         }
     }
@@ -81,17 +134,34 @@
         letter-spacing: 0.1em;
         font-weight: 400;
         font-feature-settings: "palt" 1;
+
+        @include sp {
+            font-size: 1.2rem;
+            letter-spacing: 1.2px;
+            margin-bottom: 9px;
+        }
     }
 
     &__date {
         width: 23.5%;
+
         @include tab {
             width: 16.5%;
+        }
+
+        @include sp {
+            line-height: 1.2;
+            letter-spacing: 1px;
+            width: 42%;
         }
     }
 
     &__post {
         width: 76.5%;
+
+        @include sp {
+            line-height: 1.3;
+        }
     }
 
 }

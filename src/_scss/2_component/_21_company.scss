@@ -6,6 +6,10 @@
         padding-top: 6.9%;
         padding-bottom: 6.7%;
     }
+    @include sp {
+        padding-top: 13.9%;
+        padding-bottom: 15.6%;
+    }
 
     &__list {
         padding: 0 10px;
@@ -17,6 +21,10 @@
             max-width: 720px;
             margin: 47px auto 0;
         }
+        @include sp {
+            margin: 27px auto 0;
+            padding: 0 18px;
+        }
     }
 
     &__wrapimg {
@@ -27,6 +35,7 @@
         }
         @include sp {
             flex-basis: 46.5%;
+            margin-bottom: 14px;
         }
     }
 
@@ -34,6 +43,9 @@
         margin: 20px auto;
         @include tab {
             margin: 77px auto 0;
+        }
+        @include sp {
+            margin: 27px auto 0;
         }
     }
 }
