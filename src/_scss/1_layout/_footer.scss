@@ -5,10 +5,13 @@ footer
     &__top {
         display: flex;
         border-bottom: 1px solid #ccc;
-        padding: 44px 0 32px;
+        padding: 45px 0 32px;
         font-size: 1.4rem;
         line-height: 1.8;
         font-feature-settings: "palt" 1;
+        @include tab {
+            padding: 44px 0 32px;
+        }
     }
 
     &__logo {
@@ -32,12 +35,20 @@ footer
         justify-content: space-between;
         padding-top: 10px;
         text-align: center;
+        @include sp {
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0;
+        }
     }
 
     &__nav {
         flex: 0 0 auto;
-        padding-top: 10px;
+        padding-top: 9px;
         display: flex;
+        @include sp {
+            display: none;
+        }
     }
 
     &__link {
@@ -48,5 +59,8 @@ footer
         flex: 0 0 auto;
         padding-top: 8px;
         margin-right: -2px;
+        @include sp {
+            flex: 1;
+        }
     }
 }

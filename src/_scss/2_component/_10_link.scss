@@ -11,12 +11,15 @@ line
     &__list {
         display: flex;
         width: 100%;
-        padding: 13px 1px;
+        padding: 12px 1px;
         text-align: center;
         font-feature-settings: "palt";
         font-size: 1.4rem;
         line-height: 2.5;
         letter-spacing: 1.4px;
+        @include tab {
+            padding: 11px 1px;
+        }
     }
 
     &__item {

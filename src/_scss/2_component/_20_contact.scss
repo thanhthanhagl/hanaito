@@ -1,25 +1,53 @@
 .c-contact {
     background-color: #65bdcc;
     color: #fff;
-    padding: 33px 0 27px;
+    padding: 34px 0 29px;
     font-feature-settings: "palt" 1;
     color: #fff;
 
     &__main {
         display: flex;
         flex-wrap: wrap;
+        @include sp {
+            flex-direction: column;
+        }
     }
 
     &__col {
         flex-basis: 50%;
         text-align: center;
         padding: 20px;
+
+        @include tab {
+            padding: 21px 20px;
+        }
     }
 
+    &__left {
+        @include tab {
+            flex-basis: 50.5%;
+
+            &:last-child {
+                margin-left: -3px;
+            }
+        }
+        @include sp {
+            flex-basis: 100%;
+        }
+    }
+
+    &__right {
+        @include tab {
+            flex-basis: 49%;
+        }
+        @include sp {
+            flex-basis: 100%;
+        }
+    }
 
     &__text {
         font-size: 1.6rem;
-        line-height: 1.6;
+        line-height: 1.5;
         letter-spacing: 1.6px;
         font-weight: 400;
     }
@@ -37,6 +65,6 @@
         line-height: 1.6;
         letter-spacing: 1.6px;
         font-weight: 700;
-        margin-bottom: 18px;
+        margin-bottom: 16px;
     }
 }

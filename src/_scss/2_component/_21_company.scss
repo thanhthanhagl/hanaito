@@ -1,7 +1,11 @@
 .c-company {
-    padding-top: 4%;
+    padding-top: 4.4%;
     padding-bottom: 3%;
     border-bottom: 1px solid #ccc;
+    @include tab {
+        padding-top: 6.9%;
+        padding-bottom: 6.7%;
+    }
 
     &__list {
         padding: 0 10px;
@@ -9,14 +13,27 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 47px;
+        @include tab {
+            max-width: 720px;
+            margin: 47px auto 0;
+        }
     }
 
     &__wrapimg {
         margin-bottom: 20px;
-        flex-basis: 25%;
+        flex-basis: 23.5%;
+        @include tab {
+            margin-bottom: 15px;
+        }
+        @include sp {
+            flex-basis: 46.5%;
+        }
     }
 
     &__btnmore {
         margin: 20px auto;
+        @include tab {
+            margin: 77px auto 0;
+        }
     }
 }

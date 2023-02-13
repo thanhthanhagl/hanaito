@@ -1,13 +1,18 @@
 <header class="c-header">
-  <div class="c-mainvisual">
+  <div class="c-header__iconmenu">
+    <i class="c-header__line"></i>
+    <i class="c-header__line"></i>
+    <i class="c-header__line"></i>
+  </div>
+  <div class="c-mainvisual">    
+    <a href="#" class="pc-only"><div class="c-mainvisual__book c-mainvisual__text">ご予約は<br>こちらから</div></a>
+    <a href="#" class="pc-only"><div class="c-mainvisual__address c-mainvisual__text">名古屋駅<br>徒歩6分</div></a>
     <div class="c-mainvisual__list">
       <div class="c-mainvisual__img c-mainvisual__first"></div>
       <div class="c-mainvisual__img c-mainvisual__second"></div>
       <div class="c-mainvisual__img c-mainvisual__third"></div>
       <div class="c-mainvisual__img c-mainvisual__four"></div>
     </div>
-    <a href="#"><div class="c-mainvisual__book c-mainvisual__text">ご予約は<br>こちらから</div></a>
-    <a href="#"><div class="c-mainvisual__address c-mainvisual__text">名古屋駅<br>徒歩6分</div></a>
     <div class="c-mainvisual__inner">
       <h1 class="c-pagetitle">
         <span class="c-pagetitle__text">明るく・賢く・たくましく！</span>
@@ -18,11 +23,11 @@
   </div>
   <div class="l-container l-container__w980">
     <div class="c-header__contact">
-      <span class="c-header__phone pc-only">052-485-5008</span>
-      <span class="c-header__email pc-only">お問い合わせフォーム</span>
+      <span class="c-header__phone">052-485-5008</span>
+      <span class="c-header__email">お問い合わせフォーム</span>
     </div>
     <nav class="c-nav">
-      <ul class="c-nav__menu c-nav__left pc-only">
+      <ul class="c-nav__menu c-nav__left">
         <li class="c-nav__item c-nav__about"><a href="#"><span class="c-nav__title">はないとについて</span><span
               class="c-nav__subtitle">ABOUT</span></a>
           <ul class="c-nav__submenu c-nav__subabout">
@@ -43,9 +48,9 @@
         <li class="c-nav__item c-nav__schedule"><a href="#"><span class="c-nav__title">1日の流れ</span><span
               class="c-nav__subtitle">SCHEDULE </span></a></li>
       </ul>
-      <a class="c-nav__logo" href="<%= BASE_URL %>index.html"><img src="./assets/img/logo.png"
-          alt="Kindergaten Hanaito"></a>
-      <ul class="c-nav__menu c-nav__right pc-only">
+      <a class="c-nav__logo" href="<%= BASE_URL %>index.html"><picture><source media="(max-width: 767px)" srcset="./assets/img/logosp.png"><img src="./assets/img/logo.png"
+        alt="Kindergaten Hanaito"></picture></a>
+      <ul class="c-nav__menu c-nav__right">
         <li class="c-nav__item c-nav__staff"><a href="#"><span class="c-nav__title">スタッフ紹介</span><span
               class="c-nav__subtitle">STAFF</span></a>
           <ul class="c-nav__submenu c-nav__substaff">
@@ -59,6 +64,18 @@
               class="c-nav__subtitle">BLOG</span></a></li>
         <li class="c-nav__item c-nav__qna"><a href="#"><span class="c-nav__title">よくある質問</span><span
               class="c-nav__subtitle">Q&A</span></a></li>
+      </ul>
+    </nav>
+    <nav class="c-navmb">
+      <div class="c-navmb__close">メニューを閉じる</div>
+      <ul class="c-navmb__list">
+        <li><a href="#" class="c-navmb__item">ホーム</a></li>
+        <li><a href="#" class="c-navmb__item">はないとについて</a></li>
+        <li><a href="#" class="c-navmb__item">料金</a></li>
+        <li><a href="#" class="c-navmb__item">1日の流れ</a></li>
+        <li><a href="#" class="c-navmb__item">スタッフ紹介</a></li>
+        <li><a href="#" class="c-navmb__item">ブログ</a></li>
+        <li><a href="#" class="c-navmb__item">よくある質問</a></li>
       </ul>
     </nav>
   </div>
