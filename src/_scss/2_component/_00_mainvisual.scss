@@ -57,7 +57,7 @@
         width: 119px;
         height: 119px;
         right: 135px;
-        top: 70px;
+        top: 69px;
         padding-top: 5px;
         padding-left: 8px;
         font-feature-settings: "palt" 1;
@@ -78,14 +78,37 @@
 
     &__img {
         background-size: cover;
+        background-position: center;
         height: 500px;
+
         @include sp {
             height: 300px;
         }
     }
 
+    .slick-slider {
+        height: 500px;
+        overflow-y: hidden;
+
+        @include sp {
+            height: 300px;
+        }
+    }
+
+    .slick-list {
+        height: 100%;
+    }
+
+    .slick-track {
+        height: 100%;
+    }
+
     &__first {
         background-image: url("../assets/img/slide1.jpg");
+
+        @include tab {
+            background-image: url("../assets/img/slide1tab.jpg");
+        }
 
         @include sp {
             background-image: url("../assets/img/slide1sp.jpg");
@@ -95,6 +118,10 @@
     &__second {
         background-image: url("../assets/img/slide2.jpg");
 
+        @include tab {
+            background-image: url("../assets/img/slide2tab.jpg");
+        }
+
         @include sp {
             background-image: url("../assets/img/slide2sp.jpg");
         }
@@ -103,6 +130,10 @@
     &__third {
         background-image: url("../assets/img/slide3.jpg");
 
+        @include tab {
+            background-image: url("../assets/img/slide3tab.jpg");
+        }
+
         @include sp {
             background-image: url("../assets/img/slide3sp.jpg");
         }
@@ -110,6 +141,10 @@
 
     &__four {
         background-image: url("../assets/img/slide4.jpg");
+
+        @include tab {
+            background-image: url("../assets/img/slide4tab.jpg");
+        }
 
         @include sp {
             background-image: url("../assets/img/slide4sp.jpg");
@@ -128,6 +163,7 @@
             padding-left: 20px;
             transform: translate(0, -50%);
         }
+
         @include sp {
             padding-left: 10px;
             top: 77.5%;

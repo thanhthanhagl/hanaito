@@ -7,28 +7,28 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.sp-only {
+.is-sponly {
     display: none;
 }
 
-.not-pccontent {
+.is-notpccontent {
     display: none;
 }
 @include tab {    
-    .pc-only {
+    .is-pconly {
         display: none;
     }
 
-    .not-pccontent {
+    .is-notpccontent {
         display: contents;
     }
 }
 @include sp {
-    .not-sp {
+    .is-notsp {
         display: none;
     }
 
-    .sp-only {
+    .is-sponly {
         display: block;
     }
 }

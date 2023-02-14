@@ -2,10 +2,12 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
+    padding-bottom: 6%;
+
     &__top {
         display: flex;
         border-bottom: 1px solid #ccc;
-        padding: 45px 0 32px;
+        padding: 44px 0 31px;
         font-size: 1.4rem;
         line-height: 1.8;
         font-feature-settings: "palt" 1;
@@ -36,13 +38,13 @@ footer
         @include sp {
             display: flex;
             justify-content: space-between;
-            gap: 10px;
             margin: 20px auto 0;
         }
     }
 
     &__socialitem {
         width: 25px;
+        margin: 0 5px;
     }
 
     &__info {
@@ -61,11 +63,15 @@ footer
         justify-content: space-between;
         padding-top: 10px;
         text-align: center;
+        @include tab {
+            padding-bottom: 22px;
+        }
 
         @include sp {
             font-size: 1rem;
             font-weight: 400;
             letter-spacing: 0;
+            padding-bottom: 35px;
         }
     }
 
@@ -73,6 +79,10 @@ footer
         flex: 0 0 auto;
         padding-top: 9px;
         display: flex;
+        @include tab {
+            flex: 1;
+            flex-basis: 32.1%;
+        }
 
         @include sp {
             display: none;
@@ -81,11 +91,18 @@ footer
 
     &__link {
         margin-right: 25px;
+        @include tab {
+            margin-right: 3.9%;
+
+            &:last-child {
+                margin-right: 5px;
+            }
+        }
     }
 
     &__copyright {
         flex: 0 0 auto;
-        padding-top: 8px;
+        padding-top: 7px;
         margin-right: -2px;
 
         @include sp {

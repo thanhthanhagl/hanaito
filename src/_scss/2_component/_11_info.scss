@@ -2,7 +2,9 @@
     background: linear-gradient(to right, #68a3b3 50%, #46c4dc 50%);
 
     .l-container__w980 {
-        padding: 0;
+        @include sp {
+            padding: 0;
+        }
     }
 
     &__main {
@@ -36,10 +38,10 @@
         font-size: 1.4rem;
         line-height: 1.8;
         font-weight: 500;
-        padding: 24px 30px 18px 20px;
+        padding: 24px 30px 18px 0;
 
         @include tab {
-            padding: 24px 30px 18px 23px;
+            padding: 24px 30px 18px 44px;
         }
 
         @include sp {
@@ -76,8 +78,8 @@
         line-height: 1;
         font-weight: 700;
         margin-left: -2px;
-        margin-top: 20px;
-        margin-bottom: 2px;
+        margin-top: 19px;
+        margin-bottom: 3px;
         letter-spacing: 0.1em;
 
         @include tab {
@@ -118,9 +120,7 @@
 
     &__right {
         background-color: #46c4dc;
-        padding-left: 47px;
-        padding-top: 26px;
-        padding-bottom: 18px;
+        padding: 26px 0 18px 47px;
 
         @include sp {
             padding: 34px 20px 44px;
@@ -139,7 +139,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 5px;
+            top: 4px;
             left: 0;
             border-right: 5px solid #fff;
             height: 25px;
@@ -171,7 +171,7 @@
         line-height: 1.8;
         letter-spacing: 0.1em;
         font-weight: 500;
-        margin-bottom: 23px;
+        margin-bottom: 22px;
 
         @include tab {
             padding-right: 20px;
@@ -190,7 +190,6 @@
         font-size: 1.5rem;
         line-height: 1.67;
         letter-spacing: 0.1em;
-        margin-top: -1px;
 
         @include tab {
             margin-top: 0;

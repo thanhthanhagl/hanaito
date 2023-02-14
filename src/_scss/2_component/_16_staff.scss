@@ -1,6 +1,6 @@
 .c-staff {
     background-color: #f8fff9;
-    padding: 70px 0;
+    padding: 69px 0;
 
     @include tab {
         padding: 69px 0;
@@ -29,7 +29,7 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        padding: 0 28px;
+        padding: 0 30px;
 
         @include tab {
             flex-direction: column;
@@ -44,7 +44,20 @@
     }
 
     &__wrapitem {
-        max-width: 265px;
+        max-width: 260px;
+
+        &:nth-child(2) {
+            .c-staff__bottom {
+                margin-left: -1px;
+            }
+        }
+
+        &:first-child {
+            .c-staff__mess {                
+                margin-right: -4px;
+                margin-top: -1px;
+            }
+        }
 
         @include tab {
             max-width: 100%;
@@ -53,7 +66,6 @@
             &:first-child {
                 .c-staff__mess {
                     letter-spacing: 2px;
-                    margin-top: -3px;
 
                     @include sp {
                         letter-spacing: 1.1px;
@@ -62,7 +74,7 @@
                 }
 
                 .c-staff__more {
-                    margin-top: 36px;
+                    margin-top: 34px;
 
                     @include sp {
                         margin-top: 24px;
@@ -83,6 +95,12 @@
                     }
                 }
 
+            }
+
+            &:last-child {
+                .c-staff__mess {
+                    margin-top: 2px;
+                }
             }
         }
         @include sp {
@@ -130,10 +148,11 @@
     &__bottom {
         display: flex;
         flex-direction: column;
+        height: 100%;
 
         @include tab {
             width: 61%;
-            margin-top: -1px;
+            margin-top: -3px;
         }
 
         @include sp {
@@ -169,8 +188,8 @@
 
     &__info {
         position: absolute;
-        bottom: 7px;
-        left: 26px;
+        bottom: 6px;
+        left: 25px;
 
         @include tab {
             left: 25px;
@@ -222,15 +241,18 @@
     &__mess {
         font-weight: 400;
         font-size: 1.5rem;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.4px;
         line-break: anywhere;
         font-feature-settings: "palt" 1;
         line-height: 1.67;
         color: #000;
-        padding: 16px 0 15px 1px;
+        padding: 17px 0 15px 1px;
+        height: 100%;
+        margin-right: -2px;
 
         @include tab {
             padding: 0;
+            margin-right: 0;
         }
 
         @include sp {
@@ -260,7 +282,8 @@
         line-height: 1.8;
         color: #000;
         font-feature-settings: "palt" 1;
-        padding: 0 1px;
+        display: flex;
+        justify-content: space-between;
 
         @include sp {
             font-size: 1.2rem;
@@ -284,14 +307,14 @@
         font-size: 1.5rem;
         letter-spacing: 1.5px;
         line-height: 1.67;
-        display: inline-block;
-        margin-right: 10px;
         padding: 0 6px;
         border-radius: 3px;
         margin-bottom: 3px;
+        width: 17.4%;
+        max-width: 45px;
 
         @include tab {
-            margin-right: 8px;
+            margin-right: 9px;
         }
 
         @include sp {
@@ -302,6 +325,10 @@
             line-height: 1;
             vertical-align: top;
         }
+    } 
+
+    &__text {
+        width: 77%;
     }
 
     &__role {
@@ -313,7 +340,7 @@
     }
 
     &__btnmore {
-        margin: 76px auto 0;
+        margin: 75px auto 0;
 
         @include tab {
             margin-top: 4px;

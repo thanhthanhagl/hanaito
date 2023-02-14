@@ -37,7 +37,8 @@
     &__item {
         width: 50%;
         display: flex;
-        margin-bottom: 44px;
+        margin-bottom: 46px;
+        justify-content: space-between;
 
         @include tab {
             width: 100%;
@@ -49,8 +50,8 @@
     }
 
     &__featureimg {
-        width: 100%;
-        padding: 3px 0;
+        width: 41%;
+        padding: 2px 0;
         position: relative;
         max-width: 179px;
 
@@ -62,11 +63,13 @@
     &__info {
         padding: 2px 13px 1px 14px;
         font-feature-settings: "palt";
+        width: 64%;
 
         @include tab {
             padding: 4px 13px 1px 14px;
         }
     }
+      
 
     &__label {
         border-radius: 3px;
@@ -86,6 +89,7 @@
             padding: 2px 3px;
             line-height: 1;
             margin-right: 7px;
+            border-radius: 2px;
         }
     }
 

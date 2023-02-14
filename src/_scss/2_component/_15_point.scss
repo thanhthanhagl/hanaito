@@ -12,7 +12,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 47px 45px 0 0;
+        padding: 49px 45px 35px 0;
 
         @include tab {
             width: 100%;
@@ -81,6 +81,7 @@
 
     &__list {
         display: flex;
+        height: 100%;
         @include tab {
             flex-wrap: wrap;
         }
@@ -130,9 +131,10 @@
         @include sp {
             max-width: 100%;
             line-height: 1.4;
-            &:first-child{
-                @include sp{
-                    .c-point__feature{
+
+            &:first-child {
+                @include sp {
+                    .c-point__feature {
                         height: 120px;
                     }
                 }
@@ -173,9 +175,10 @@
     &__desc {
         font-weight: 400;
         color: #000;
-        margin-top: 13px;
+        margin-top: 12px;
         line-height: 1.4;
-        letter-spacing: 0.8px;
+        letter-spacing: -0.1px;
+        font-size: 1.5rem;
         @include sp {
             font-size: 1.2rem;
             letter-spacing: 0;
@@ -186,7 +189,7 @@
 
     &__info {
         max-width: 100%;
-        padding: 19px 19px 12px;
+        padding: 19px 18px 9px 19px;
         border-top: 3px solid;
         @include tab {
             max-width: 262px;
@@ -280,7 +283,7 @@
     }
 
     &__btn {
-        margin-top: 112px;
+        margin-top: 56.5%;
         padding-right: 20px;
         font-weight: 700;
         font-size: 1.5rem;

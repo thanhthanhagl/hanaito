@@ -1,5 +1,5 @@
 .c-news {
-    padding-top: 4.3%;
+    padding-top: 4.4%;
     padding-bottom: 0.8%;
 
     @include tab {
@@ -23,6 +23,9 @@
             margin: 22px auto 0;
             flex-direction: column;
         }
+        @include sp {
+            max-width: 100%;
+        }
     }
 
     &__col {
@@ -38,14 +41,16 @@
 
         @include sp {
             padding: 0 20px;
-            margin-bottom: 33px;
+            margin: 0 auto 33px;
+            max-width: 500px;
+            width: 100%;
         }
     }
 
     &__right {
         @include sp {
             img {
-                height: 170px;
+                height: 100%;
                 width: 100%;
             }
         }
@@ -55,7 +60,6 @@
         display: flex;
         max-width: 440px;
         padding-right: 20px;
-        margin-top: 1px;
         margin-bottom: 13px;
 
         @include tab {
@@ -69,8 +73,9 @@
             max-width: 500px;
         }
     }
-    &__list{
-        @include sp{
+
+    &__list {
+        @include sp {
             max-width: 500px;
             margin: 0 auto;
         }
@@ -102,7 +107,7 @@
         margin-left: auto;
         font-size: 1.3rem;
         line-height: 1.9;
-        letter-spacing: 1.3px;
+        letter-spacing: 0.1em;
         font-weight: 700;
 
         @include tab {

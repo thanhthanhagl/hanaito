@@ -6,7 +6,7 @@ btn
 ------------------------------------------------------------*/
 
 .c-btn {
-    padding: 9px 0 7px;
+    padding: 9px 9px 7px;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2;
@@ -16,7 +16,7 @@ btn
     color: $green;
     border-radius: 3px;
     margin: 0 auto;
-    max-width: 218px;
+    max-width: 200px;
     display: block;
     text-align: center;
 
@@ -26,15 +26,15 @@ btn
         opacity: 1;
     }
     @include sp {
-        max-width: 222px;
-        padding: 8px 0 5px;
+        max-width: 210px;
+        padding: 8px 6px 5px;
         font-weight: 700;
         letter-spacing: 0;
     }
 }
 
 .c-btnred {
-    padding: 11px 0;
+    padding: 11px 10px;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.7;
@@ -43,13 +43,13 @@ btn
     color: #fff;
     border-radius: 3px;
     margin: 0 auto;
-    max-width: 220px;
+    max-width: 200px;
     display: block;
     text-align: center;
     background-color: $red;
     @include sp {
-        padding: 11px 0 9px;
-        max-width: 225px;
+        padding: 11px 10px 9px;
+        max-width: 205px;
         letter-spacing: 0;
     }
 }
