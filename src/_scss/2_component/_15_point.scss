@@ -87,12 +87,10 @@
     }
 
     &__feature {
-        max-width: 340px;
         @include tab {
             height: 100%;
             position: relative;
             width: 48.8%;
-            max-width: unset;
         }
         @include sp {
             max-width: 94px;
@@ -187,7 +185,7 @@
     }
 
     &__info {
-        max-width: 340px;
+        max-width: 100%;
         padding: 19px 19px 12px;
         border-top: 3px solid;
         @include tab {
