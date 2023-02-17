@@ -3,6 +3,9 @@ footer
 ------------------------------------------------------------*/
 .c-footer {
     padding-bottom: 6%;
+    @include tab {
+        padding-bottom: 0;
+    }
 
     &__top {
         display: flex;
@@ -11,10 +14,6 @@ footer
         font-size: 1.4rem;
         line-height: 1.8;
         font-feature-settings: "palt" 1;
-
-        @include tab {
-            padding: 44px 0 32px;
-        }
 
         @include sp {
             flex-direction: column;

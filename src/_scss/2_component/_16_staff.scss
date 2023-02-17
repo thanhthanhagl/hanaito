@@ -3,7 +3,7 @@
     padding: 69px 0;
 
     @include tab {
-        padding: 69px 0;
+        padding: 70px 0 69px;
     }
 
     @include sp {
@@ -16,10 +16,6 @@
 
     &__main {
         margin-top: 43px;
-
-        @include tab {
-            margin-top: 41px;
-        }
 
         @include sp {
             margin-top: 29px;
@@ -35,6 +31,7 @@
             flex-direction: column;
             max-width: 756px;
             margin: 0 auto;
+            padding: 0 28px;
         }
 
         @include sp {
@@ -47,13 +44,44 @@
         max-width: 260px;
 
         &:nth-child(2) {
+            @include tab {                
+                margin-bottom: 51px;
+            }
+            @include sp {
+                margin-bottom: 44px;
+            }
+
             .c-staff__bottom {
                 margin-left: -1px;
+
+                @include tab {
+                    margin-left: 0;
+                    margin-top: -6px;
+                }
+                @include sp {
+                    margin-top: -1px;
+                }
+            }
+
+            .c-staff__mess {
+                @include sp {
+                    margin-right: -3px;
+                }
+            }
+
+            .c-staff__moreinfo {
+                &:last-child {
+                    .c-staff__text {
+                        @include sp {
+                            width: 74%;
+                        }
+                    }
+                }
             }
         }
 
         &:first-child {
-            .c-staff__mess {                
+            .c-staff__mess {
                 margin-right: -4px;
                 margin-top: -1px;
             }
@@ -61,23 +89,26 @@
 
         @include tab {
             max-width: 100%;
-            margin-bottom: 47px;
+            margin-bottom: 50px;
 
             &:first-child {
                 .c-staff__mess {
                     letter-spacing: 2px;
+                    margin: 0 -1px;
 
                     @include sp {
                         letter-spacing: 1.1px;
                         margin-top: 0;
+                        margin-right: 0;
                     }
                 }
 
                 .c-staff__more {
-                    margin-top: 34px;
+                    margin-top: 33px;
 
                     @include sp {
-                        margin-top: 24px;
+                        margin-top: 23px;
+                        padding-left: 0;
                     }
                 }
 
@@ -86,6 +117,12 @@
 
                     @include sp {
                         letter-spacing: 1px;
+
+                        &:last-child {
+                            .c-staff__text {
+                                padding-right: 25px;
+                            }
+                        }
                     }
                 }
 
@@ -96,21 +133,20 @@
                 }
 
             }
-
-            &:last-child {
-                .c-staff__mess {
-                    margin-top: 2px;
-                }
-            }
         }
+
         @include sp {
-            margin-bottom: 32px;
+            margin-bottom: 33px;
         }
 
         &:last-child {
             @include sp {
                 .c-staff__infotext {
                     margin-bottom: 4px;
+                }
+
+                .c-staff__mess {
+                    margin-right: -3px;
                 }
             }
         }
@@ -136,7 +172,7 @@
         @include tab {
             width: 60%;
             max-width: 260px;
-            margin-top: 3px;
+            max-height: 260px;
         }
 
         @include sp {
@@ -151,12 +187,14 @@
         height: 100%;
 
         @include tab {
-            width: 61%;
+            width: 65%;
             margin-top: -3px;
+            padding-left: 13px;
         }
 
         @include sp {
-            width: 68%;
+            width: 72.5%;
+            margin-top: -1px;
         }
     }
 
@@ -168,7 +206,7 @@
             width: 100%;
             height: auto;
             padding-bottom: 100%;
-            overflow: hidd;
+            overflow: hidden;
         }
     }
 
@@ -183,6 +221,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            object-position: right center;
         }
     }
 
@@ -253,6 +292,7 @@
         @include tab {
             padding: 0;
             margin-right: 0;
+            letter-spacing: 0.1em;
         }
 
         @include sp {
@@ -271,7 +311,8 @@
         }
 
         @include sp {
-            margin-top: 24px;
+            margin-top: 25px;
+            padding-left: 1px;
         }
     }
 
@@ -291,11 +332,10 @@
             letter-spacing: 0.1em;
 
             span {
-                display: inline-block;
-
                 &:last-child {
-                    width: 110px;
+                    width: 73.5%;
                     margin-top: 3px;
+                    padding-right: 0;
                 }
             }
         }
@@ -314,21 +354,27 @@
         max-width: 45px;
 
         @include tab {
-            margin-right: 9px;
+            width: 16%;
         }
 
         @include sp {
-            margin-bottom: 6px;
+            margin-bottom: 5px;
             margin-right: 1px;
             padding: 6px 9px;
             font-size: 1.2rem;
             line-height: 1;
             vertical-align: top;
+            height: 25px;
+            width: 27%;
         }
-    } 
+    }
 
     &__text {
         width: 77%;
+
+        @include tab {
+            width: 86%;
+        }
     }
 
     &__role {
@@ -343,10 +389,11 @@
         margin: 75px auto 0;
 
         @include tab {
-            margin-top: 4px;
+            margin-top: 1px;
         }
+
         @include sp {
-            margin-top: 14px;
+            margin-top: 12px;
         }
     }
 }

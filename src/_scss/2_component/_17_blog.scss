@@ -6,7 +6,7 @@
     }
 
     @include sp {
-        padding: 13% 0 15.8%;
+        padding: 13% 0 15.7%;
     }
 
     .l-container__w980 {
@@ -25,11 +25,12 @@
         margin-top: 39px;
 
         @include tab {
-            margin: 39px auto 0;
+            margin: 40px auto 0;
             max-width: 700px;
         }
+
         @include sp {
-            margin: 18px auto 0;
+            margin: 20px auto 0;
             max-width: 375px;
         }
     }
@@ -42,10 +43,27 @@
 
         @include tab {
             width: 100%;
-            margin-bottom: 23px;
+            margin-bottom: 25px;
+
+            &:first-child {
+                margin-bottom: 26px;
+
+                @include sp {
+                    margin-bottom: 21px;
+                }
+            }
         }
+
         @include sp {
-            margin-bottom: 19px;
+            margin-bottom: 21px;
+            padding-left: 1px;
+
+            &:nth-child(even) {
+                .c-blog__label {
+                    padding: 3px 2px 2px;
+                    margin-right: 6px;
+                }
+            }
         }
     }
 
@@ -66,10 +84,11 @@
         width: 64%;
 
         @include tab {
-            padding: 4px 13px 1px 14px;
+            padding-right: 0;
+            width: 86%;
         }
     }
-      
+
 
     &__label {
         border-radius: 3px;
@@ -85,11 +104,17 @@
         margin-right: 9px;
         margin-left: 1px;
 
+        @include tab {
+            height: 25px;
+            line-height: 2;
+        }
+
         @include sp {
-            padding: 2px 3px;
+            padding: 3px 3px 2px;
             line-height: 1;
             margin-right: 7px;
             border-radius: 2px;
+            height: unset;
         }
     }
 
@@ -131,7 +156,7 @@
         letter-spacing: 1.5px;
 
         @include tab {
-            letter-spacing: 1.3px;
+            letter-spacing: 1.4px;
             margin-top: 8px;
         }
     }
@@ -140,10 +165,11 @@
         margin-top: 32px;
 
         @include tab {
-            margin-top: 25px;
+            margin-top: 23px;
         }
+
         @include sp {
-            margin-top: 13px;
+            margin-top: 12px;
         }
     }
 }

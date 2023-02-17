@@ -47,9 +47,15 @@ btn
     display: block;
     text-align: center;
     background-color: $red;
+    @include tab {
+        position: relative;
+        left: -3px;
+        padding: 12px 10px 10px;
+    }
     @include sp {
-        padding: 11px 10px 9px;
+        padding: 11px 10px 8px;
         max-width: 205px;
         letter-spacing: 0;
+        left: 0;
     }
 }

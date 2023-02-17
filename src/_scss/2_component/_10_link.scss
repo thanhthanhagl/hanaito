@@ -49,3 +49,10 @@ line
         }
     }
 }
+
+.is-call {
+    pointer-events: none;
+    @include tab {
+        pointer-events: initial;
+    }
+}

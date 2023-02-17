@@ -38,7 +38,8 @@ module.exports = defineConfig(({ mode }) => {
 		publicDir: '_public',
 		base,
 		server: {
-			open: true
+			open: true,
+			host:true
 		},
 		build: {
 			outDir: "../dist",

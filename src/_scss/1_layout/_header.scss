@@ -65,8 +65,9 @@
                 display: none;
             }
         }
+
         @include sp {
-            right: -16px;
+            right: -17px;
         }
     }
 
@@ -95,11 +96,11 @@
 
     @include tab {
         padding: 0 5px;
-        margin: -1% auto 0;
+        margin: -1.1% auto 0;
     }
 
     @include sp {
-        margin: -7.4% auto 0;
+        margin: -7% auto 0;
     }
 
     &__menu {
@@ -130,8 +131,10 @@
         }
 
         @include sp {
-            width: 126px;
+            width: 125px;
             height: 111px;
+            position: relative;
+            left: -2px;
         }
     }
 
@@ -352,12 +355,13 @@
 
     &__list {
         height: calc(100% - 375px);
+
         @include sp {
             height: calc(100% - 185px);
         }
 
         li:last-child {
-            &__item {
+            .c-navmb__item {
                 border-bottom: 0;
             }
         }
