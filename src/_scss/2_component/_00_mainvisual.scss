@@ -1,5 +1,6 @@
 .c-mainvisual {
     position: relative;
+    overflow:hidden;
 
     &::after {
         content: "";
@@ -86,7 +87,7 @@
         }
     }
 
-    .slick-slider {
+    .slick-slide {
         height: 500px;
         overflow-y: hidden;
 
