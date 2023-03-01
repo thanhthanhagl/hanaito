@@ -1,0 +1,26 @@
+//page-top
+.p-index {
+    .c-header {
+        &::before {
+            position: absolute;
+        }
+
+        &::after {
+            position: absolute;
+        }
+    }
+
+    .c-nav {
+        margin-top: -6.4%;
+        @include tab {
+            margin: -1.1% auto 0;
+        }
+        @include sp {
+            margin: -7% auto 0;
+        }
+    }
+
+    .c-mainvisual {
+        display: block;
+    }
+}

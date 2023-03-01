@@ -3,6 +3,77 @@
 .c-header {
     position: relative;
 
+    &::after {
+        content: "";
+        background-image: url("../assets/img/flagleft.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        width: 218px;
+        height: 96px;
+        display: block;
+        top: 0;
+        left: 0;
+        position: fixed;
+
+        @include tab {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        background-image: url("../assets/img/flag.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        width: 214px;
+        height: 96px;
+        display: block;
+        top: 0;
+        right: 0;
+        position: fixed;
+
+        @include tab {
+            display: none;
+        }
+    } 
+
+    &__text {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    &__book {
+        background-image: url("../assets/img/redflower.png");
+        width: 119px;
+        height: 119px;
+        right: 135px;
+        top: 69px;
+        padding-top: 5px;
+        padding-left: 8px;
+        font-feature-settings: "palt" 1;
+    }
+
+    &__address {
+        background-image: url("../assets/img/blueflower.png");
+        width: 107px;
+        height: 106px;
+        right: 20px;
+        top: 134px;
+        padding-top: 9px;
+    }
+
     &__contact {
         text-align: right;
         padding-right: 25px;
@@ -91,16 +162,10 @@
 .c-nav {
     display: flex;
     justify-content: space-between;
-    margin-top: -6.4%;
     padding: 0 13px 0 4px;
 
     @include tab {
         padding: 0 5px;
-        margin: -1.1% auto 0;
-    }
-
-    @include sp {
-        margin: -7% auto 0;
     }
 
     &__menu {
@@ -177,12 +242,12 @@
         margin-right: 50px;
 
         &::after {
-            background-image: url("./assets/img/about_normal.png");
+            background-image: url("../assets/img/about_normal.png");
         }
 
         &:hover {
             &::after {
-                background-image: url("./assets/img/about_hover.png");
+                background-image: url("../assets/img/about_hover.png");
             }
 
             .c-nav__submenu {
@@ -193,12 +258,12 @@
 
     &__price {
         &::after {
-            background-image: url("./assets/img/price_normal.png");
+            background-image: url("../assets/img/price_normal.png");
         }
 
         &:hover {
             &::after {
-                background-image: url("./assets/img/price_hover.png");
+                background-image: url("../assets/img/price_hover.png");
             }
         }
     }
@@ -209,19 +274,19 @@
         transform: translateX(-3px);
 
         &::after {
-            background-image: url("./assets/img/schedule_normal.png");
+            background-image: url("../assets/img/schedule_normal.png");
         }
 
         &:hover {
             &::after {
-                background-image: url("./assets/img/schedule_hover.png");
+                background-image: url("../assets/img/schedule_hover.png");
             }
         }
     }
 
     &__staff {
         &::after {
-            background-image: url("./assets/img/staff_normal.png");
+            background-image: url("../assets/img/staff_normal.png");
         }
 
         &:hover {
@@ -231,31 +296,31 @@
 
             &::after {
 
-                background-image: url("./assets/img/staff_hover.png");
+                background-image: url("../assets/img/staff_hover.png");
             }
         }
     }
 
     &__blog {
         &::after {
-            background-image: url("./assets/img/blog_normal.png");
+            background-image: url("../assets/img/blog_normal.png");
         }
 
         &:hover {
             &::after {
-                background-image: url("./assets/img/blog_hover.png");
+                background-image: url("../assets/img/blog_hover.png");
             }
         }
     }
 
     &__qna {
         &::after {
-            background-image: url("./assets/img/qna_normal.png");
+            background-image: url("../assets/img/qna_normal.png");
         }
 
         &:hover {
             &::after {
-                background-image: url("./assets/img/qna_hover.png");
+                background-image: url("../assets/img/qna_hover.png");
             }
         }
     }

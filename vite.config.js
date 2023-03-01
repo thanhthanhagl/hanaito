@@ -74,7 +74,7 @@ module.exports = defineConfig(({ mode }) => {
 				dataFile: 'src/_data/data.json',
 				ejs: {
 					views: ["src"],
-				},
+				}
 			}),
 			Controller(),
 			Imagemin({

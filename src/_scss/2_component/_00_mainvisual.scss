@@ -1,78 +1,8 @@
 .c-mainvisual {
     position: relative;
-    overflow:hidden;
-
-    &::after {
-        content: "";
-        background-image: url("./assets/img/flagleft.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        width: 218px;
-        height: 96px;
-        display: block;
-        top: 0;
-        left: 0;
-        position: absolute;
-
-        @include tab {
-            display: none;
-        }
-    }
-
-    &::before {
-        content: "";
-        background-image: url("./assets/img/flag.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        width: 214px;
-        height: 96px;
-        display: block;
-        top: 0;
-        right: 0;
-        position: absolute;
-
-        @include tab {
-            display: none;
-        }
-    }
-
-    &__text {
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-weight: 700;
-        font-size: 1.5rem;
-        letter-spacing: 1.5px;
-        color: #fff;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
-    }
-
-    &__book {
-        background-image: url("./assets/img/redflower.png");
-        width: 119px;
-        height: 119px;
-        right: 135px;
-        top: 69px;
-        padding-top: 5px;
-        padding-left: 8px;
-        font-feature-settings: "palt" 1;
-    }
-
-    &__address {
-        background-image: url("./assets/img/blueflower.png");
-        width: 107px;
-        height: 106px;
-        right: 20px;
-        top: 134px;
-        padding-top: 9px;
-    }
-
+    overflow: hidden;
+    display: none;
+    
     &__list {
         z-index: -1;
     }

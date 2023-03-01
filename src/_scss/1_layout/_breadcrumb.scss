@@ -1,0 +1,28 @@
+.c-breadcrumb {
+    &__featureimg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 15.6%;
+    }
+
+    &__item {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #000;
+        line-height: 1.67;
+        &:last-child{
+            &::after{
+                content: "";
+            }
+        }
+        &:after{
+            content: "＞";
+            color: #000;
+        }
+    }
+
+    &--home {
+        color: #41c9e3;
+    }
+}
