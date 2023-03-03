@@ -1,0 +1,98 @@
+.c-box {
+    padding: 80px 0;
+    font-feature-settings: "palt" 1;
+    @include sp {
+        padding: 50px 0;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        background: #e3f4f9;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #e3f4f9;
+        @include sp {
+            flex-direction: column;
+        }
+        
+        &::before {
+            content: "";
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            top: -19%;
+            left: 0;
+            width: 36.2%;
+            height: 140%;
+            border-top-right-radius: 56%;
+            border-bottom-right-radius: 47%;
+            @include sp {
+                top: 0;
+                left: -7%;
+                height: 27%;
+                width: 118%;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 56%;
+                border-bottom-left-radius: 56%;
+            }
+        }
+    }
+
+    &--left {
+        width: 33.8%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sp {
+            width: 100%;
+            padding: 2%;
+        }
+    }
+
+    &__wrapimg {
+        max-width: 254px;
+        @include tab {
+            max-width: 195px;
+        }
+        @include sp {
+            max-width: 165px;
+        }
+    }
+
+    &--right {
+        width: 59.5%;
+        z-index: 1;
+        padding: 36px 37px 25px 0;
+        @include sp {
+            padding: 50px 20px 25px;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 2.1rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 1.9;
+        color: $text-color;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 25px;
+        @include sp {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2;
+        letter-spacing: 0;
+        color: $text-color;
+        margin-bottom: 13px;
+        @include sp {
+            font-size: 1.3rem;
+        }
+    }
+}

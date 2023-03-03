@@ -1,0 +1,72 @@
+.c-icon {
+    display: none;
+    cursor: pointer;
+
+    @include sp {
+        display: none;
+        position: sticky;
+        top: calc(100% - 50px);
+        background-color: #41c9e3;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        z-index: 6;
+
+        &.is-scroll {
+            display: block;
+        }
+
+        &.is-open {
+            .c-icon {
+                &__line {
+                    &:nth-child(1) {
+                        top: 18px;
+                        left: 18px;
+                        width: 30%;
+                        transform: translateY(6px) rotate(-135deg);
+                    }
+    
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+    
+                    &:nth-child(3) {
+                        top: 30px;
+                        left: 18px;
+                        width: 30%;
+                        transform: translateY(-6px) rotate(135deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &__line {
+        @include sp {
+            display: inline-block;
+            transition: all 0.4s;
+            /*アニメーションの設定*/
+            position: absolute;
+            left: 14px;
+            height: 3px;
+            border-radius: 2px;
+            background: #fff;
+
+            &:nth-child(1) {
+                top: 15px;
+                width: 45%;
+            }
+
+            &:nth-child(2) {
+                top: 23px;
+                width: 35%;
+            }
+
+            &:nth-child(3) {
+                top: 31px;
+                width: 20%;
+            }
+        }
+    }
+}

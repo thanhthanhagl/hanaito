@@ -35,7 +35,7 @@
         <li class="c-nav__item c-nav__about"><span class="c-nav__title">はないとについて</span><span
               class="c-nav__subtitle">ABOUT</span>
           <ul class="c-nav__submenu c-nav__subabout">
-            <li class="c-nav__subitem"><a href="../about/index.html"><img src="../assets/img/about_icon1.jpg" alt="はないとの概要"
+            <li class="c-nav__subitem"><a href=".<%= BASE_URL %>about/index.html"><img src="../assets/img/about_icon1.jpg" alt="はないとの概要"
                   class="c-nav__submenuicon"><span class="c-nav__submenutext">はないとの概要</span></a></li>
             <li class="c-nav__subitem"><a href="#"><img src="../assets/img/about_icon2.jpg" alt="はないとの特色"
                   class="c-nav__submenuicon"><span class="c-nav__submenutext">はないとの特色</span></a></li>
@@ -47,12 +47,12 @@
                   class="c-nav__submenuicon"><span class="c-nav__submenutext">給食について</span></a></li>
           </ul>
         </li>
-        <li class="c-nav__item c-nav__price"><a href="../price.html"><span class="c-nav__title">料金</span><span
+        <li class="c-nav__item c-nav__price"><a href="..<%= BASE_URL %>price.html"><span class="c-nav__title">料金</span><span
               class="c-nav__subtitle">PRICE</span></a></li>
         <li class="c-nav__item c-nav__schedule"><a href="#"><span class="c-nav__title">1日の流れ</span><span
               class="c-nav__subtitle">SCHEDULE </span></a></li>
       </ul>
-      <a class="c-nav__logo" href="<%= BASE_URL %>index.html">
+      <a class="c-nav__logo" href="..<%= BASE_URL %>index.html">
         <picture>
           <source media="(max-width: 767px)" srcset="../assets/img/logosp.png"><img src="../assets/img/logo.png"
             alt="Kindergaten Hanaito">
@@ -70,20 +70,20 @@
         </li>
         <li class="c-nav__item c-nav__blog"><a href="#"><span class="c-nav__title">ブログ</span><span
               class="c-nav__subtitle">BLOG</span></a></li>
-        <li class="c-nav__item c-nav__qna"><a href="../faq.html"><span class="c-nav__title">よくある質問</span><span
+        <li class="c-nav__item c-nav__qna"><a href="..<%= BASE_URL %>faq.html"><span class="c-nav__title">よくある質問</span><span
               class="c-nav__subtitle">Q&A</span></a></li>
       </ul>
     </nav>
     <nav class="c-navmb">
       <div class="c-navmb__close">メニューを閉じる</div>
       <ul class="c-navmb__list">
-        <li><a href="#" class="c-navmb__item">ホーム</a></li>
-        <li><a href="#" class="c-navmb__item">はないとについて</a></li>
-        <li><a href="#" class="c-navmb__item">料金</a></li>
+        <li><a href="..<%= BASE_URL %>index.html" class="c-navmb__item">ホーム</a></li>
+        <li><a href="../about/index.html" class="c-navmb__item">はないとについて</a></li>
+        <li><a href="../price.html" class="c-navmb__item">料金</a></li>
         <li><a href="#" class="c-navmb__item">1日の流れ</a></li>
         <li><a href="#" class="c-navmb__item">スタッフ紹介</a></li>
         <li><a href="#" class="c-navmb__item">ブログ</a></li>
-        <li><a href="#" class="c-navmb__item">よくある質問</a></li>
+        <li><a href="../faq.html" class="c-navmb__item">よくある質問</a></li>
       </ul>
     </nav>
   </div>

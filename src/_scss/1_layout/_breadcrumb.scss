@@ -1,8 +1,34 @@
 .c-breadcrumb {
+    margin-top: 15px;
+    font-feature-settings: "palt" 1;
+
     &__featureimg {
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        padding-bottom: 15.6%;
+        padding-bottom: 15.65%;
+        position: relative;
+        min-height: 250px;
+        @include sp {
+            min-height: 110px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background-image: url("../assets/img/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 16.5%;
+            padding-bottom: 9.8%;
+        }
+    }
+
+    &__list {
+        padding-top: 56px;
     }
 
     &__item {
@@ -11,18 +37,24 @@
         font-size: 1.2rem;
         color: #000;
         line-height: 1.67;
-        &:last-child{
-            &::after{
-                content: "";
+
+        &:first-child {
+            &::before {
+                display: none;
             }
         }
-        &:after{
+
+        &::before {
             content: "＞";
             color: #000;
+            margin: 0 21px 0 15px;
         }
     }
 
     &--home {
         color: #41c9e3;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
     }
 }

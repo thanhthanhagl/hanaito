@@ -1,9 +1,64 @@
-<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | Home page', id:'p-faq', name:'よくある質問'}); -%>
+<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | よくある質問' , id:'p-faq', name:'よくある質問', subname:'faq',category:'',links:[]}); -%>
 
   <!-- @meta -->
   <meta name="description" content="Kindergaten Hanaito | FAQ page">
   <!-- @@meta -->
   <!-- @content -->
   <main>
-</main>
-<!-- @@content -->
+    <div class="l-container l-container__w980">
+      <section class="c-faq">
+        <div class="c-icon">
+          <i class="c-icon__line"></i>
+          <i class="c-icon__line"></i>
+          <i class="c-icon__line"></i>
+        </div>
+        <div class="c-faq__toc">
+          <% if (typeof faq !='undefined' ) { %>
+            <ul class="c-toc">
+              <% faq.forEach(item=> { %>
+                <li class="c-toc__item">
+                  <a href="#<%= item.link%>">
+                    <%= item.title %>
+                  </a>
+                </li>
+                <% }) %>
+            </ul>
+            <% } %>
+        </div>        
+        <div class="c-faq__main">
+          <% if(typeof faq !='undefined' ){ faq.forEach(group=>{ %>
+            <div class="c-faq__group" id="<%= group.link %>">
+              <h2 class="c-faq__title">
+                <%= group.title %>
+              </h2>
+              <div class="c-faq__list">
+                <% if(group.group){ group.group.forEach(item=> {%>
+                  <dl class="c-faq__item">
+                    <dt class="c-faq__question"><span class="c-faq__label u-blue">Q</span>
+                      <span class="c-faq__text"><%= item.question %></span>
+                    </dt>
+                    <dd class="c-faq__answer"><span class="c-faq__label u-red">A</span>
+                      <span class="c-faq__text"><%- item.answer %></span></dd>
+                  </dl>
+                  <% })}%>
+              </div>
+            </div>
+            <% })}%>
+        </div>
+      </section>
+    </div>
+    <%- include('_partials/contact'); -%>
+      <div class="c-flink is-notsp">
+        <div class="l-container l-container__w980">
+          <ul class="c-flink__list">
+            <li class="c-flink__item"><a href="#">はないとについて</a></li>
+            <li class="c-flink__item"><a href="#">料金</a></li>
+            <li class="c-flink__item"><a href="#">1日の流れ</a></li>
+            <li class="c-flink__item"><a href="#">スタッフ紹介</a></li>
+            <li class="c-flink__item"><a href="#">ブログ</a></li>
+            <li class="c-flink__item"><a href="#">よくある質問</a></li>
+          </ul>
+        </div>
+      </div>
+  </main>
+  <!-- @@content -->

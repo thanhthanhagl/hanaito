@@ -1,0 +1,25 @@
+.c-pagetop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+    @include sp {
+        flex-direction: column;
+    }
+
+    &--left {
+        width: 25%;
+        @include sp {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &--right {
+        width: 75%;
+        padding-top: 25px;
+        padding-bottom: 2px;
+        @include sp {
+            width: 100%;
+        }
+    }
+}

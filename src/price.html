@@ -1,9 +1,93 @@
-<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | Home page', id:'p-price', name:'料金'}); -%>
+<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | 料金' , id:'p-price', name:'料金', category:'',
+  subname:'price', links:[ {link:'#p-price__first', title:'一時お預かり' }, {link:'#p-price__second', title:'タイムチケット'},
+  {link:'#p-price__third', title:'月極' }, {link:'#p-price__fourth', title:'オプション'}, {link:'#p-price__fifth',
+  title:'提携法人様' } ]}); -%>
 
   <!-- @meta -->
   <meta name="description" content="Kindergaten Hanaito | Price page">
   <!-- @@meta -->
   <!-- @content -->
   <main>
+    <div class="l-container l-container__w980">
+      <div class="p-price__desc">ご予約の方法は<a class="u-text__blue u-text--underline" href="#">空き状況確認・ご予約ページ</a>からご確認いただけます。
+      </div>
+    </div>
+    <!-- Start section first -->
+    <section class="c-group" id="p-price__first">
+      <div class="l-container l-container__w980">
+        <div class="c-group__top">
+          <h2 class="c-gtitle">一時お預かり</h2>
+          <p class="c-label">ランチ・おやつ・ミルク・お教室込み！</p>
+        </div>
+        <div class="c-table">
+          <table>
+            <tbody>
+              <tr class="c-table__tr">
+                <div class="c-table__th u-white u-text__black">(30分あたり) </div>
+                <div class="c-table__th u-darkgreen">〜0歳</div>
+                <div class="c-table__th u-darkgreen">1〜2歳</div>
+                <div class="c-table__th u-darkgreen">3歳以上</div>
+              </tr>
+              <tr class="c-table__tr">
+                <th class="c-table__th u-blue"><span class="u-bold">基本料金</span><span class="u-italic">8:00~18:00</span></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- End section first -->
+    <!-- Start section second -->
+    <section class="c-group" id="p-price__second">
+      <div class="l-container l-container__w980">
+        <div class="c-group__top">
+          <h2 class="c-gtitle">タイムチケット<span class="c-gsubtitle">有効期限：3ヶ月</span></h2>
+          <p class="c-label">ランチ・おやつ・ミルク・お教室込み！</p>
+        </div>
+      </div>
+    </section>
+    <!-- End section second -->
+    <!-- Start section third -->
+    <section class="c-group" id="p-price__third">
+      <div class="l-container l-container__w980">
+        <div class="c-group__top">
+          <h2 class="c-gtitle">月極のご利用について</h2>
+          <p class="c-label">毎⽇、託児が必要な⽅に！</p>
+        </div>
+      </div>
+    </section>
+    <!-- End section third -->
+    <!-- Start section fourth -->
+    <section class="c-group" id="p-price__fourth">
+      <div class="l-container l-container__w980">
+        <div class="c-group__top">
+          <h2 class="c-gtitle">オプション</h2>
+          <p class="c-labelgrey">※ご利⽤プランに含まれない場合</p>
+        </div>
+      </div>
+    </section>
+    <!-- End section fourth -->
+    <!-- Start section fifth -->
+    <section class="c-group" id="p-price__fifth">
+      <div class="l-container l-container__w980">
+        <div class="c-group__top">
+          <h2 class="c-gtitle">提携法人様のご利用について</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End section fifth -->
+    <%- include('_partials/contact'); -%>
+      <div class="c-flink is-notsp">
+        <div class="l-container l-container__w980">
+          <ul class="c-flink__list">
+            <li class="c-flink__item"><a href="./about/index.html">はないとについて</a></li>
+            <li class="c-flink__item"><a href="./">料金</a></li>
+            <li class="c-flink__item"><a href="#">1日の流れ</a></li>
+            <li class="c-flink__item"><a href="#">スタッフ紹介</a></li>
+            <li class="c-flink__item"><a href="#">ブログ</a></li>
+            <li class="c-flink__item"><a href="./faq.html">よくある質問</a></li>
+          </ul>
+        </div>
+      </div>
   </main>
   <!-- @@content -->

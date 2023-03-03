@@ -1,2 +1,34 @@
 //page price
-.p-price{}
+.p-price {
+    .c-breadcrumb {
+        &__featureimg {
+            background-image: url("../assets/img/price/price.jpg");
+        }
+    }
+
+    &__desc {
+        color: #000;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2;
+        font-feature-settings: "palt" 1;
+        letter-spacing: 0;
+    }
+    @include tab {
+        .c-pagetop {
+            &--left {
+                width: 10%;
+            }
+
+            &--right {
+                flex: 1;
+            }
+        }
+
+        .c-anchor {
+            &__item {
+                margin-left: 30px;
+            }
+        }
+    }
+}

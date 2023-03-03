@@ -1,17 +1,31 @@
-<% if(id !='p-index'){ %>
-    <section class="c-breadcrumb">        
+<% if(id !='p-index' ){ %>
+    <section class="c-breadcrumb">
         <div class="c-breadcrumb__featureimg">
         </div>
         <div class="l-container l-container__w980">
-            <ul class="c-breadcrumb_nav">
-                <li class="c-breadcrumb__item c-breadcrumb--home"><a href="<%= BASE_URL %>index.html" class="c-breadcrum__text">HOME</a></li>
+            <ul class="c-breadcrumb__list">
+                <li class="c-breadcrumb__item c-breadcrumb--home"><a href="<%= BASE_URL %>index.html"
+                        class="c-breadcrum__text">HOME</a></li>
                 <% if(category) {%>
                     <li class="c-breadcrumb__item"><span class="c-breadcrum__text"><%- category -%></span></li>
-                <% }%>
-                <li class="c-breadcrumb__item"><span class="c-breadcrum__text"><%- name -%></span></li>
+                    <% }%>
+                        <li class="c-breadcrumb__item"><span class="c-breadcrum__text"><%- name -%></span></li>
             </ul>
-            <h1 class="c-pagename"><%- name -%></h1>
-            <p class="c-pagename__sub"><%- subname -%></p>
+            <div class="c-pagetop">
+                <div class="c-pagetop--left">
+                    <h1 class="c-pagename"><%- name -%></h1>
+                    <p class="c-pagename__sub"><%- subname -%></p>
+                </div>
+                <% if(id != 'p-faq'){%>
+                    <div class="c-pagetop--right">
+                        <ul class="c-anchor">
+                            <% if(links) { links.forEach(item=> {%>
+                                <li class="c-anchor__item"><a href="<%- item.link -%>"><%- item.title -%></a></li>
+                                <% })}%>
+                        </ul>
+                    </div>
+                <% }%>
+            </div>
         </div>
     </section>
-<% } %>
+    <% } %>

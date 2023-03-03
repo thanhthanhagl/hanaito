@@ -14,3 +14,41 @@
 //------------------------------------------------------------
 // color
 //------------------------------------------------------------
+.u-text {
+    &__blue {
+        color: $text-blue;
+    }
+    &__black{
+        color:#000;
+    }
+
+    &--underline {
+        text-decoration: underline;
+    }
+}
+
+.u-white {
+    background-color: #fff;
+}
+
+.u-blue {
+    background-color: $text-blue;
+}
+
+.u-darkgreen {
+    background-color: #4b656c;
+}
+
+.u-red {
+    background-color: $red;
+}
+//------------------------------------------------------------
+// text
+//------------------------------------------------------------
+.u-bold {
+    font-weight: 700;
+}
+
+.u-italic {
+    font-weight: 400;
+}

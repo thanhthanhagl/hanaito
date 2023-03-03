@@ -17,6 +17,7 @@ line
         font-size: 1.4rem;
         line-height: 2.5;
         letter-spacing: 1.4px;
+
         @include tab {
             padding: 11px 1px;
         }
@@ -52,6 +53,7 @@ line
 
 .is-call {
     pointer-events: none;
+
     @include tab {
         pointer-events: initial;
     }
@@ -61,4 +63,38 @@ line
     position: relative;
     width: 100px;
     height: 100px;
+}
+
+.c-anchor {
+    display: flex;
+    justify-content: flex-end;
+    font-feature-settings: "palt" 1;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: $text-color;
+    line-height: 4.3;
+    @include sp {
+        flex-direction: column;
+        line-height: 3;
+    }
+
+    a {
+        transition: 0.6s all linear;
+    }
+
+    &__item {
+        margin-left: 50px;
+        @include sp {
+            margin-left: 0;
+        }
+
+        &::before {
+            color: #41c9e3;
+            font-family: "Font Awesome 5 Free";
+            content: "\f103";
+            font-weight: 600;
+            margin-right: 13px;
+        }
+    }
 }

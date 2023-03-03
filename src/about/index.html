@@ -1,9 +1,67 @@
-<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | Home page', id:'p-about', category:'はないとについて', name:'はないとの概要', subname:'about'}); -%>
+<%- include('_layouts/layout', { title: 'Kindergaten Hanaito | はないとの概要' , id:'p-about', category:'はないとについて',
+  name:'はないとの概要', subname:'about', links:[ { link:'#p-about__first', title:'アクセス' }, { link:'#p-about__second',
+  title:'ロゴマークについて' } ]}); -%>
 
   <!-- @meta -->
   <meta name="description" content="Kindergaten Hanaito | About page">
   <!-- @@meta -->
   <!-- @content -->
   <main>
-</main>
-<!-- @@content -->
+    <section id="p-about__first" class="c-intro">
+      <div class="l-container l-container__w980">
+        <div class="c-intro__main">
+          <div class="c-intro--left"></div>
+          <div class="c-intro--right">
+            <h2 class="c-intro__title">「こんな託児所が欲しかった」<br>
+              はないとは保護者のみなさまの<br>
+              声から生まれた託児所です</h2>
+            <p class="c-intro__text">「一時お預かり専用託児所はないと」を運営する美辺株式会社代表の美辺香澄です。<br><br>
+              私は熱田区生まれで、結婚する前まで監査の仕事をしていました。出産後は非常勤で監査法人に勤務し、その際に託児所を利用していました。私が思う理想の託児所は「安心・安全・広い・美味しい・便利」という５つの特長をもった託児所です。しかし利用したいと思える質の高い託児所は予約が取れず、とても不便に感じていました。また多くの託児所では一時預かりはメインでないため、入会金が必要であったり荷物が多く利用しづらい状況です。<br><br>
+              そこで、「安心・安全・広い・美味しい・便利」という５つの特長を兼ね備え、かつ、いつでも予約がとれる託児所をオープンすることとなりました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="c-map">
+      <div class="c-map__btn is-notsp">
+        <div class="c-map__text">名駅から徒歩<span class="c-map__number">6</span>分</div>
+      </div>
+      <div class="c-map__wrapmap">
+        <iframe class="c-map__map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6522.539396562183!2d136.884991!3d35.17483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376c2eec25503%3A0xd330ff6952b549a7!2z44Ko44Og44OG44OD44KvIOOCteODs-OCqOOCueOCseODvOODk-ODq-ODkeODvOOCreODs-OCsA!5e0!3m2!1sja!2s!4v1674110919917!5m2!1sja!2s"></iframe>
+      </div>
+    </div>
+    <%- include('_partials/info'); -%>
+      <section id="p-about__second" class="c-box">
+        <div class="l-container l-container__w980">
+          <div class="c-box__main">
+            <div class="c-box--left">
+              <div class="c-box__wrapimg">
+                <img src="../assets/img/about/section2.png" alt="ロゴマークについて">
+              </div>
+            </div>
+            <div class="c-box--right">
+              <h2 class="c-box__title">ロゴマークについて</h2>
+              <p class="c-box__text">
+                はないとのロゴマークは、子象の「ハナ」と親象の「イト」。象は父親との遊びのなかから、社会に適応する技術・能力を身につけていきます。象の子育てのように、母親から離れる時間を通し、お子様に好奇心と想像力を養って欲しい。寄り添う親子象に、そんな願いをこめました。また家庭では提供の難しいプロの食事で、健康な体づくりを手助けすることをコンセプトとしています。
+               </p>
+               <p class="c-box__text">中心の花は「安心・安全・広い・美味しい・便利」という５つの特徴を表しています。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <%- include('_partials/contact'); -%>
+      <div class="c-flink is-notsp">
+        <div class="l-container l-container__w980">
+          <ul class="c-flink__list">
+            <li class="c-flink__item"><a href="../about/index.html">はないとについて</a></li>
+            <li class="c-flink__item"><a href="../price.html">料金</a></li>
+            <li class="c-flink__item"><a href="#">1日の流れ</a></li>
+            <li class="c-flink__item"><a href="#">スタッフ紹介</a></li>
+            <li class="c-flink__item"><a href="#">ブログ</a></li>
+            <li class="c-flink__item"><a href="./faq.html">よくある質問</a></li>
+          </ul>
+        </div>
+      </div>
+  </main>
+  <!-- @@content -->

@@ -1,0 +1,96 @@
+.c-faq {
+    padding: 50px 0 60px;
+    font-feature-settings: "palt" 1;
+    color: #222;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        flex-direction: column;
+    }
+
+    &__toc {
+        width: 20.4%;
+        padding-top: 1px;
+
+        @include sp {
+            width: 100%;
+
+            &.is-open {
+                position: sticky;
+                top: 59%;
+
+                .c-toc {
+                    padding: 22px 14px 19px 55px;
+                }
+            }
+        }
+    }
+
+    &__main {
+        width: 75.5%;
+
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    &__group {
+        padding-top: 41px;
+
+        &:first-child {
+            padding-top: 1px;
+
+            @include sp {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    &__title {
+        border-left: 4px solid $text-blue;
+        line-height: 1;
+        padding-left: 10px;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+
+    &__item {
+        border-top: 1px solid #ccc;
+        padding: 22px 0;
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+
+    &__label {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        line-height: 2;
+        margin-right: 9px;
+        flex-basis: 30px;
+    }
+
+    &__question {
+        margin-bottom: 15px;
+        display: flex;
+        font-weight: 700;
+
+    }
+
+    &__answer {
+        display: flex;
+        font-weight: 400;
+    }
+
+    &__text {
+        width: 99%;
+    }
+}

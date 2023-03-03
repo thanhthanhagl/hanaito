@@ -14,7 +14,8 @@
 .is-notpccontent {
     display: none;
 }
-@include tab {    
+
+@include tab {
     .is-pconly {
         display: none;
     }
@@ -23,6 +24,7 @@
         display: contents;
     }
 }
+
 @include sp {
     .is-notsp {
         display: none;
@@ -47,6 +49,13 @@
 @import "2_component/00_mainvisual";
 @import "2_component/01_btn";
 @import "2_component/02_title";
+@import "2_component/03_pagetop";
+@import "2_component/04_intro";
+@import "2_component/05_box";
+@import "2_component/06_faq";
+@import "2_component/07_table-of-content";
+@import "2_component/08_icon";
+@import "2_component/09_table";
 @import "2_component/10_link";
 @import "2_component/11_info";
 @import "2_component/12_gallery";
