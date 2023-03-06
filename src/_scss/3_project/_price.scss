@@ -13,6 +13,9 @@
         line-height: 2;
         font-feature-settings: "palt" 1;
         letter-spacing: 0;
+        margin-top: 35px;
+        padding: 18px 14px;
+        background-color: #fafafa;
     }
     @include tab {
         .c-pagetop {
@@ -32,3 +35,59 @@
         }
     }
 }
+
+#p-price {
+    &__first {
+        padding-top: 15px;
+    }
+    &__second{
+        .c-gtitle{
+            padding-bottom: 3px;
+        }
+        .c-table{
+            &:nth-child(3){
+                margin: 32px auto;
+            }
+            &__th{
+                padding: 13px 15px 10px;
+                &--white{
+                    padding: 9px 12px 5px;
+                }
+            }
+        }
+        .c-group__list{
+            &:nth-child(2){
+               margin-top: 13px;
+            }
+        }
+    }
+    &__third{
+        .c-table{
+            &:nth-child(3){
+                margin: 50px auto 30px;
+            }
+            &__th{
+                padding: 13px 15px 11px;
+                &--white{
+                    padding: 9px 12px 5px;
+                }
+            }
+        }
+        .c-group__list{
+            &:nth-child(2){
+               margin-top: 13px;
+            }
+        }
+    }
+    &__fourth{
+        .c-table{
+            &__th{
+                &--white{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+  
+  

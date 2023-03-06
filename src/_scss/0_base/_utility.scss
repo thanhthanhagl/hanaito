@@ -1,11 +1,7 @@
 ///*------------------------------------------------------------
 //Anchor position
 //------------------------------------------------------------*/
-//.u-anchor:before {
-//	content:"";
-//	margin-top: -100px;
-//	padding-top: 100px;
-//}
+
 
 //------------------------------------------------------------
 // margin
@@ -18,17 +14,18 @@
     &__blue {
         color: $text-blue;
     }
-    &__black{
-        color:#000;
+
+    &__black {
+        color: #000;
+    }
+
+    &__center {
+        text-align: center;
     }
 
     &--underline {
         text-decoration: underline;
     }
-}
-
-.u-white {
-    background-color: #fff;
 }
 
 .u-blue {
@@ -37,6 +34,11 @@
 
 .u-darkgreen {
     background-color: #4b656c;
+}
+
+.u-grey {
+    background-color: #fafafa;
+    color: #222;
 }
 
 .u-red {
@@ -49,6 +51,21 @@
     font-weight: 700;
 }
 
-.u-italic {
+.u-normal {
     font-weight: 400;
+}
+
+.u-list {
+    &__none {
+        &::before {
+            content: "";
+        }
+    }
+}
+//------------------------------------------------------------
+// border
+//------------------------------------------------------------
+.u-border{
+    border-top: 0;
+    border-left: 0;
 }

@@ -1,5 +1,82 @@
 .c-table {
-    .c-table__th {
+    margin: 31px auto 25px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 0;
+
+    &__th,
+    &__td {
+        border: 1px solid #ccc;
+        width: 25%;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.875;
+    }
+    &__tr{
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__th {
         color: #fff;
+        padding: 14px 15px 10px 13px;
+
+        &--flex {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 14px 10px;
+        }
+
+        &--cols2 {
+            width: 50%;
+        }
+
+        &--white {
+            background-color: #fff;
+            text-align: right;
+            padding: 12px 10px 10px;
+            line-height: 1.25;
+            color: #000;
+        }
+    }
+
+    &__textth {
+        width: 50%;
+        text-align: left;
+    }
+
+    &__td {
+        color: #595e63;
+        padding: 12px 10px 10px;
+
+        &--cols2 {
+            width: 50%;
+        }
+    }
+
+    &__note {
+        margin-bottom: 21px;
+    }
+
+    &__itemstar {
+        color: $text-blue;
+        font-size: 1.6rem;
+        line-height: 1.875;
+        letter-spacing: 0;
+        font-weight: 700;
+        font-feature-settings: "palt" 1;
+
+        &::before {
+            content: "★ ";
+            margin-left: -1px;
+        }
+    }
+
+    &__text {
+        &--fs14 {
+            font-size: 1.4rem;
+        }
     }
 }
