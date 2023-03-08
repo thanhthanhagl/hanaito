@@ -11,4 +11,9 @@
     position: relative;
     top: 3px;
     right: 2px;
+
+    @include sp {
+        max-width: max-content;
+        font-size: 1.4rem;
+    }
 }

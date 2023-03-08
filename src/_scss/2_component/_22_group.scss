@@ -6,19 +6,43 @@
         display: flex;
         justify-content: space-between;
         padding-top: 42px;
+        @include sp {
+            flex-direction: column;
+        }
 
         &--left {
             width: 50%;
+            @include sp {
+                width: 100%;
+                margin-bottom: 25px;
+            }
         }
 
         &--right {
             width: 50%;
+            @include sp {
+                width: 100%;
+            }
         }
     }
 
     &__info {
         border: 1px solid #ccc;
         padding: 29px 27px 25px;
+
+        &--sub {
+            margin-top: 5px;
+
+            .c-group {
+                &__item {
+                    line-height: 2;
+                }
+
+                &__listsub {
+                    margin-top: 3px;
+                }
+            }
+        }
     }
 
     &__list {
@@ -66,6 +90,10 @@
         }
 
         &--square {
+            line-height: 2;
+            text-indent: -1px;
+            letter-spacing: -0.01em;
+
             &::before {
                 content: "■ ";
             }
@@ -86,9 +114,16 @@
         display: flex;
         justify-content: space-between;
         margin: 30px 0;
+        @include sp {
+            flex-direction: column;
+        }
 
         &--left {
             width: 50%;
+            @include sp {
+                width: 100%;
+                margin-bottom: 30px;
+            }
 
             .c-table {
                 margin: 0 auto;
@@ -97,29 +132,61 @@
 
         &--right {
             width: 46%;
+            @include sp {
+                width: 100%;
+            }
         }
-    }
+    }      
 
     &__sub {
+        margin-top: 41px;
+
         .c-table {
             width: 50%;
+            max-width: 490px;
             margin: 0;
             font-size: 1.6rem;
             line-height: 1.875;
             letter-spacing: 0;
             font-feature-settings: "palt" 1;
             font-weight: 700;
+            margin-top: 5px;
+            margin-bottom: 31px;
+            @include sp {
+                width: 100%;
+            }
 
-            &__th,
+            &__th {
+                padding: 12px 11px 10px 10px;
+            }
+
             &__td {
-                padding: 10px;
+                padding: 12px 15px 10px 10px;
             }
         }
+
+        &:last-child {
+            margin-top: 39px;
+
+            .c-table {
+                margin-bottom: 34px;
+            }
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: -0.01em;
+        line-height: 2;
+        color: #222;
+        font-feature-settings: "palt" 1;
     }
 
     //qna
     &__qna {        
         counter-reset: sentence;
+        margin-top: 40px;
     }
 
     &__sentence {
@@ -127,10 +194,14 @@
         font-feature-settings: "palt" 1;
         line-height: 2;
         font-size: 1.5rem;
+        margin-bottom: 16px;
     }
 
     &__question {
         font-weight: 700;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 2px;
+        margin-bottom: 2px;
 
         &::before {
             counter-increment: sentence;
@@ -140,5 +211,6 @@
 
     &__answer {
         font-weight: 400;
+        margin-left: -1px;
     }
 }

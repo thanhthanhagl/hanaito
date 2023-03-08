@@ -6,6 +6,12 @@
     font-feature-settings: "palt" 1;
     letter-spacing: 0;
 
+    &__tr {
+        &:last-child {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
     &__th,
     &__td {
         border: 1px solid #ccc;
@@ -13,11 +19,8 @@
         font-weight: 700;
         font-size: 1.6rem;
         line-height: 1.875;
-    }
-    &__tr{
-        border-bottom: 1px solid #ccc;
-    }
-
+    }     
+      
     &__th {
         color: #fff;
         padding: 14px 15px 10px 13px;
@@ -78,5 +81,57 @@
         &--fs14 {
             font-size: 1.4rem;
         }
+    }
+
+    &--type2 {
+        .c-table {
+            &__tr {
+                &:nth-child(1) {
+                    .c-table {
+                        &__th {
+                            &:last-child {
+                                padding: 14px 25px 10px 14px;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .c-table {
+                        &__th {
+                            padding: 9px 12px 5px;
+                        }
+            
+                        &__textfs14 {
+                            line-height: 1.25;
+                        }
+                    }
+                }
+            }
+
+            &__th {             
+                padding: 14px 15px 10px;
+
+                &--white {
+                    width: 50% !important;
+                    max-width: 245px;
+                }
+
+                &--flex {
+                    width: 100% !important;
+                    padding: 12px 12px 9px;
+                    align-items: center;
+                }
+            }
+
+            &__td {
+                padding: 12px 15px 10px 10px;
+            }
+
+            &__textfs14 {
+                width: 27%;
+            }
+        }
+
     }
 }

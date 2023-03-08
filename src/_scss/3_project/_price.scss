@@ -17,6 +17,20 @@
         padding: 18px 14px;
         background-color: #fafafa;
     }
+
+    .c-anchor {
+        &__item {
+            margin-left: 45px;
+            @include tab {
+                margin-left: 30px;
+            }
+
+            &::before {
+                margin-right: 12.5px;
+            }
+        }
+    }
+
     @include tab {
         .c-pagetop {
             &--left {
@@ -27,12 +41,6 @@
                 flex: 1;
             }
         }
-
-        .c-anchor {
-            &__item {
-                margin-left: 30px;
-            }
-        }
     }
 }
 
@@ -40,54 +48,91 @@
     &__first {
         padding-top: 15px;
     }
-    &__second{
-        .c-gtitle{
+
+    &__second {
+        .c-gtitle {
             padding-bottom: 3px;
         }
-        .c-table{
-            &:nth-child(3){
+
+        .c-table {
+            &:nth-child(3) {
                 margin: 32px auto;
             }
-            &__th{
+
+            &__th {
                 padding: 13px 15px 10px;
-                &--white{
+
+                &--white {
                     padding: 9px 12px 5px;
                 }
             }
         }
-        .c-group__list{
-            &:nth-child(2){
-               margin-top: 13px;
+
+        .c-group__list {
+            &:nth-child(2) {
+                margin-top: 13px;
             }
         }
     }
-    &__third{
-        .c-table{
-            &:nth-child(3){
+
+    &__third {
+        .c-table {
+            &:nth-child(3) {
                 margin: 50px auto 30px;
             }
-            &__th{
+
+            &__th {
                 padding: 13px 15px 11px;
-                &--white{
+
+                &--white {
                     padding: 9px 12px 5px;
                 }
             }
         }
-        .c-group__list{
-            &:nth-child(2){
-               margin-top: 13px;
+
+        .c-group__list {
+            &:nth-child(2) {
+                margin-top: 13px;
             }
         }
     }
-    &__fourth{
-        .c-table{
-            &__th{
-                &--white{
-                    width: 50%;
+
+    &__fourth {
+        .c-group {
+            padding-bottom: 36px;
+
+            &__list {
+                &:nth-child(2) {
+                    margin-top: 11px;
+                    letter-spacing: -0.01em;
+                }
+            }
+
+            &__item {
+                &--small {
+                    line-height: 2.3;
+                    text-indent: 16px;
+                }
+
+                &--smallstar {
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+    &__fifth {
+        .c-group {
+            margin-left: -1px;
+            padding-bottom: 57px;
+
+            &__item {
+                &--link {
+                    text-indent: 2px;
+                    display: block;
+                    margin-top: -5px;
                 }
             }
         }
     }
 }
-  
-  
